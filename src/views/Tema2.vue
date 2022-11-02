@@ -55,7 +55,7 @@
     p.mb-5(data-aos='fade-right') En el siguiente video se puede observar el proceso de construcción de una base de datos en un gestor de bases de datos MySQL: 
     figure.mb-5
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/2L91WMqw96A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/OKVAMSzGM0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.bg-gradient.p-3.mb-5

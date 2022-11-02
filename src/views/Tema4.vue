@@ -170,7 +170,7 @@
                   h3.mb-1 Funciones DML 
                   p.text-small Para ver ejemplos de estas funciones puede consultar el documento anexo. t 
                 .col-sm-auto
-                  a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo1.pdf')" target="_blank")
+                  a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo3.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
     .tarjeta(style="background-color: #f1f8ff ").p-5.mb-5
@@ -356,7 +356,7 @@
                   h3.mb-1 Consultas combinadas DML 
                   p.text-small Para conocer más sobre las consultas combinadas DML puede consultar documento anexo.  
                 .col-sm-auto
-                  a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo1.pdf')" target="_blank")
+                  a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo4.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
     .row.justify-content-center.mb-5

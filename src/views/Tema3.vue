@@ -390,10 +390,51 @@
                   td.fst-italic.text-center
                     | EXCEPT 
                   td Tomando como referencia dos consultas, el #[em EXCEPT] retorna los registros de la primera consulta que no estén en la segunda consulta. 
+    Separador
+    #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+      h2 3.2 Sentencias de agregación
+    p.mb-5(data-aos='fade-right') Las sentencias de agregación son implementadas, por una parte, al realizar operaciones sobre un conjunto de datos, pero devolviendo un único valor agregado sobre todos los datos. Es decir, permite realizar promedio, conteo, máximos, mínimo, etc. En la tabla a continuación se especifica cada uno de ellos y su respectiva descripción:
+    .row.justify-content-center.mb-5
+      .col-lg-10 
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Tabla 6. 
+          span Operadores de Conjuntos
+        .color-acento-contenido.mb-5
+          table.bg-white
+            thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
+              tr.text-center
+                th Operador
+                th Descripción
+            tbody
+              tr
+                td.fst-italic.text-center  MAX 
+                td Devuelve el valor máximo de la lista de registros a consultar
+              tr
+                td.fst-italic.text-center  MIN
+                td Devuelve el valor mínimo de la lista de registros a consultar
+              tr
+                td.fst-italic.text-center  AVG 
+                td Devuelve el promedio del valor respectivo de una columna de la tabla
+              tr
+                td.fst-italic.text-center  STDDEV
+                td Devuelve la desviación del estándar para un conjunto de números 
+              tr
+                td.fst-italic.text-center  COUNT 
+                td Retorna la cantidad del número de registro que tiene determina columna
+              tr
+                td.fst-italic.text-center  GROUP BY 
+                td Se indica una columna en específico para agrupar los resultados
+              tr
+                td.fst-italic.text-center  HAVING
+                td Permite rechazar o seleccionar un conjunto de registros de una consulta 
+              tr
+                td.fst-italic.text-center  ORDER BY
+                td Ordena el conjunto de registros resultantes de una consulta, se pueden ordenar de forma ascendente o descendente
+    
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon-adorno.color-acento-contenido.p-4(style="background-color: #fff4da")
-          p  Ejemplos: 
+          p  #[b Ejemplos:] 
             br
             br
             | Consulta con la cláusula #[em ORDER BY] 

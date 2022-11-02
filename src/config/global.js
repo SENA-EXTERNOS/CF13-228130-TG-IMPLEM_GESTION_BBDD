@@ -37,37 +37,43 @@ export default {
         nombreRuta: 'tema1',
         icono: 'far fa-file-alt',
         numero: '1',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'SQL Lenguaje de consulta relacional',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '1.1',
-            titulo: 'Titulo de segundo nivel',
-            hash: 't_1_1',
-          },
-        ],
       },
 
       {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Sentencias DDL.',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Sentencias DML.',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.1',
+            titulo: 'Operaciones',
+            hash: 't_3_1',
+          },
+          {
+            icono: 'far fa-file-alt',
+            numero: '3.2',
+            titulo: 'Sentencias de Agregación',
+            hash: 't_3_2',
+          },
+        ],
       },
       {
         nombreRuta: 'tema4',
         icono: 'far fa-file-alt',
         numero: '4',
-        titulo: 'Titulo de primer nivel',
+        titulo: 'Subconsultas anidadas, vistas y otras características de SQL',
         desarrolloContenidos: true,
       },
     ],
@@ -113,32 +119,120 @@ export default {
   },
   complementario: [
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      link: 'https://www.google.com/',
+      tema: 'Creación de Base de Datos en SQL',
+      referencia:
+        'Lozano, J. (2018). Creación y gestión de una base de datos con MySQL y phpMyAdmin.',
+      tipo: 'Artículo',
+      link:
+        'https://tauja.ujaen.es/bitstream/10953.1/9445/1/TFG%20%285%29.pdf ',
     },
     {
-      tema: '',
-      referencia: '',
-      tipo: '',
-      descarga: '/downloads/prueba.pdf',
+      tema: 'Lenguaje DDL',
+      referencia: 'El - masri,H. (2013). Data Definition Language (DDL).',
+      tipo: 'Artículo',
+      link: 'http://site.iugaza.edu.ps/hmasry/files/Lab2-DDL.pdf ',
+    },
+    {
+      tema: 'SQL',
+      referencia:
+        'Bisson, A. (2021). SQL: Fundamentos del lenguaje (con ejercicios corregidos)',
+      tipo: 'Libro',
+      link:
+        'https://www-eni-training-com.bdigital.sena.edu.co/portal/client/mediabook/home ',
+    },
+    {
+      tema: 'Operadores',
+      referencia:
+        'Wanumen, L. y Mosquera D. (2018). Arquitectura para la generación de consultas SQL usando lógica de conjuntos',
+      tipo: 'Artículo',
+      link:
+        'https://revistas.udistrital.edu.co/index.php/visele/article/view/14343 ',
     },
   ],
   glosario: [
     {
-      termino: '',
-      significado: '',
+      termino: '<em>DDL</em>',
+      significado: 'Lenguaje de Definición de Datos',
     },
     {
-      termino: '<em></em>',
-      significado: '',
+      termino: '<em>DML</em>',
+      significado:
+        'Lenguaje de Manipulación de Datos. Las instrucciones DML empiezan normalmente con SELECT, INSERT, UPDATE o DELETE',
+    },
+    {
+      termino: '<em>SELECT</em>',
+      significado:
+        'muestra una lista de los campos que contienen datos de interés',
+    },
+    {
+      termino: '<em>COLUMN</em>',
+      significado:
+        'área de cada fila de una tabla de base de datos que almacena el valor de datos para algún atributo del objeto modelado por la tabla',
+    },
+    {
+      termino: '<em>HAVING</em>',
+      significado:
+        'en una instrucción SQL que contiene funciones de agregado, especifica las condiciones que se aplican a los campos que se resumen en la instrucción SELECT',
+    },
+    {
+      termino: '<em>CREATE TABLE</em>',
+      significado:
+        'sentencia que sirve para crear la estructura de una tabla no para rellenarla con datos, nos permite definir las columnas que tiene y ciertas restricciones que deben cumplir esas columnas',
+    },
+    {
+      termino: '<em>DROP</em>',
+      significado: 'utilizado para eliminar tablas e índices',
+    },
+    {
+      termino: '<em>COUNT</em>',
+      significado:
+        'utilizada para devolver el número de registros de la selección',
+    },
+    {
+      termino: '<em>MIN</em>',
+      significado:
+        'utilizada para devolver el valor más bajo de un campo especificado',
+    },
+    {
+      termino: '<em>ORDER BY</em>',
+      significado: 'especifica la forma de ordenar los resultados',
     },
   ],
   referencias: [
     {
-      referencia: '',
-      link: '',
+      referencia:
+        'Aragón, Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. Revista Cubana de Ciencias Informáticas.',
+      link:
+        'http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S2227-18992018000300012',
+    },
+    {
+      referencia:
+        'Beynon - Davies, P. (2018). Sistemas de bases de datos. Reverté. ',
+      link:
+        'https://books.google.es/books?hl=es&lr=&id=XjbeDwAAQBAJ&oi=fnd&pg=PR5&dq=bases+de+datos&ots=DIBXDRJPGU&sig=8sk6MPk4qc9zwSgjd7tiiFQFw94#v=onepage&q=bases%20de%20datos&f=false ',
+    },
+    {
+      referencia:
+        'Bisson, A. (2021). SQL: Fundamentos Del Lenguaje (con Ejercicios Corregidos). 3ª Edición. Ediciones ENI. Recursos Informáticos. Web. ',
+      link:
+        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_biblioteca_eniRIT4SQL',
+    },
+    {
+      referencia:
+        'Cavique, L. (2021). Armadilhas em consultas SQL: em bases de dados relacionais. Recuperado el 27 de septiembre de 2022 de',
+      link: 'https://repositorioaberto.uab.pt/handle/10400.2/10695 ',
+    },
+    {
+      referencia:
+        'Figueredo, L., Rodríguez, E., & Silva, Y. (2021). Softar, software educativo de álgebra relacional de bases de datos.',
+      link:
+        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1i756fj/TN_cdi_dialnet_primary_oai_dialnet_unirioja_es_ART0001500395 ',
+    },
+    {
+      referencia:
+        'Martínez, D. (2019). Manual de bases de datos (Autoaprendizaje).',
+      link:
+        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_elibroELB175897',
     },
   ],
   creditos: {

@@ -2,13 +2,21 @@
   &-1
     animation: float1 3.5s ease-in-out infinite alternate
     position: absolute
-    top: 40%
-    right: 50%
+    top: 5%
+    right: 60%
+    width: 48px
   &-2
-    animation: float1 2.8s ease-in-out infinite alternate
+    animation: float1 3.7s ease-in-out infinite alternate
     position: absolute
-    top: 51%
+    top: 7%
+    right: 45%
+    width: 48px
+  &-3
+    animation: float1 3.9s ease-in-out infinite alternate
+    position: absolute
+    top: 10%
     right: 30%
+    width: 48px
 
 
 @keyframes float1
@@ -17,3 +25,46 @@
 
   100%
     transform: translateY(0px)
+
+.acordion__accion__btn--a
+  background-color: $color-primario
+  i
+    color: $white
+.tarjeta--gris2
+  background-color: #f6f6f6
+.modal-prop
+  .img-infografica-b__modal
+    background-color: #e8e8e8 !important
+    border-radius: 20px
+    display: flex
+    justify-content: center
+    align-items: center
+    h5, p
+      color: $color-sistema-texto !important
+  .img-infografica-b__modal__btn-cerrar
+    background-color: $color-primario !important
+    color: $white !important
+    border-radius: 50%
+    margin: 10px
+.bg-gradient
+  background: rgb(0,78,150)
+  background-color: linear-gradient(4deg, rgba(0,78,150,1) 0%, rgba(12,40,74,1) 100%) 
+span
+  &.cod1
+    color: #aa63a7
+  &.cod2
+    color: #b24449
+  &.cod3
+    color: #ff00ff
+  &.cod3
+    color: #20c3c5
+.acordion__activo
+  background-color: #e8e8e8 !important
+.slyder-a__btn--sigt, .slyder-a__btn--atrs 
+  background-color: #00defc
+.slyder-a__bullets__item 
+  background-color: #9deefe 
+  border: 0
+.slyder-a__bullets__item--active
+  background-color: #00defc
+  border: 0

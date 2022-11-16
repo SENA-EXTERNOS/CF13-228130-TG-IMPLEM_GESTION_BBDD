@@ -202,8 +202,7 @@ export default {
     {
       referencia:
         'Aragón, Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. Revista Cubana de Ciencias Informáticas.',
-      link:
-        'http://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S2227-18992018000300012',
+      link: 'https://www.redalyc.org/journal/3783/378365832012/html/',
     },
     {
       referencia:

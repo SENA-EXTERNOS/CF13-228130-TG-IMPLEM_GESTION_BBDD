@@ -135,7 +135,7 @@
             h5 Figura 8.
             span Registro Modificado 
           img(src='@/assets/curso/temas/tema3/4.jpg', alt='')
-      div(titulo="").ps-5
+      div(titulo="Eliminacion de datos <em>(DELETE</em>)").ps-5
         p La sentencia DELETE sirve para borrar filas de una tabla. La sintaxis de SQL DELETE es: 
           br
           |“#[em DELETE FROM nombre_tabla WHERE nombre_columna = valor]” 
@@ -154,7 +154,7 @@
           |“#[em DELETE FROM vendedor WHERE codigo = 521;]” 
           br
           br
-          |- #[b Recuerde que], para eliminar un registro de una base de datos, se recomienda identificarlo por su llave primaria como el ejemplo anterior, (521) es el código en la tabla que a su vez es la llave primaria del registro. 
+          |- Recuerde que, para eliminar un registro de una base de datos, se recomienda identificarlo por su llave primaria como el ejemplo anterior, (521) es el código en la tabla que a su vez es la llave primaria del registro. 
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Estructura básica de la sentencia #[em SELECT] 

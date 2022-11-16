@@ -8,7 +8,7 @@
       h1 SQL Lenguaje de consulta relacional 
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-lg-11
-        .bloque-texto-g.color-acento-botones.p-3.p-sm-4.p-md-5.bloque-derecha
+        .bloque-texto-g.color-acento-botones.p-3.p-sm-4.p-md-5.bloque-derecha(style="background-color: #a6f4fe")
           .bloque-texto-g__img(
             :style="{'background-image':`url(${require('@/assets/curso/temas/tema1/1.svg')})`}"
           )
@@ -85,7 +85,8 @@
           )
           
           .bloque-texto-g__texto.border-dash.p-4
-            h4 Lenguaje SQL
+            h4 Lenguaje SQL 
+            br
             p.mb-0 Las siglas SQL significan #[em Structured Query Language], es un lenguaje fundamental en los SGBD relacionales, siendo uno de los lenguajes más conocidos y de más antigüedad. Está comprendido por los lenguajes de definición de datos y manipulación de los datos, permitiendo a su vez realizar diferentes consultas. En resumen, el lenguaje SQL permite gestionar y consultar los datos en un sistema gestor de bases de datos relacional, el SGBD organiza los datos en grupos llamados relaciones.
     SlyderF.mb-5.slyder-100(columnas="col-lg-6 col-xl-6")
       .tarjeta-avatar.h-100
@@ -140,7 +141,7 @@
           ul.lista-ul--color
             li
               i.fas.fa-check
-              | Manejan gran variedad de datos operativos, provenientes de sistemas OLTP (on-line transactional processing). Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución 
+              | Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución 
             li
               i.fas.fa-check
               | Actualmente las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores
@@ -161,7 +162,7 @@
       .col-lg-10(data-aos="zoom-in")
         .cajon-adorno.color-acento-contenido.p-4(style="background-color: #fff4da")
           h5 Ejemplo: 
-          p Si tenemos que realizar una transacción bancaria de mover $ 500 000 pesos de la cuenta de un cliente a otra. Desde el punto de vista del banco es una transacción única, desde la visión del sistema se requiere mínimo dos operaciones: 
+          p Si tenemos que realizar una transacción bancaria de mover $ 500.000 pesos de la cuenta de un cliente a otra. Desde el punto de vista del banco es una transacción única, desde la visión del sistema se requiere mínimo dos operaciones: 
           ul.lista-ul--color
             li
               i.fas.fa-check
@@ -172,7 +173,7 @@
     .row.justify-content-center.mb-5
       .col-lg-4.col-6.mb-lg-0.mb-3(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/7.svg', alt='')
       .col-lg-8(data-aos="fade-left")
-        p En caso de que la operación de restar de la cuenta origen se efectué correctamente, pero la otra operación no se logra finalizar, al final del día el balance del banco será incorrecto. Por lo tanto, debe haber una manera de garantizar que se realicen correctamente las dos operaciones o incorrectamente, para evitar inconsistencias en el balance del banco. Un gestor de bases de datos transacciones provee esa característica.
+        p En caso de que la operación de restar de la cuenta origen se efectúe correctamente, pero la otra operación no se logra finalizar, al final del día el balance del banco será incorrecto. Por lo tanto, debe haber una manera de garantizar que se realicen correctamente las dos operaciones o incorrectamente, para evitar inconsistencias en el balance del banco. Un gestor de bases de datos transacciones provee esa característica.
           br
           br
           | Un gestor de bases de datos transacciones permite agrupar varias operaciones en una sola transacción indivisible. El gestor es el encargado de garantizar que las operaciones finalicen sin errores o en caso contrario no finalice ninguna. En caso de que una operación finalice correctamente y la otra no, como el ejemplo referido anteriormente, el gestor inicia el proceso de #[em #[b rollback] ]  de todas las operaciones implicadas, incluso aquellas operaciones que se realizaron correctamente, eliminando cualquier rastro de la transacción y volviendo a un estado actual la base de datos tal cual como estaba antes de empezar a ejecutar dicha transacción. Si todas las operaciones agrupadas en la transacción se ejecutan correctamente, la transacción realiza #[em commit ] y se ejecutan los cambios en la base de datos. Una vez se concluyó el #[em #[b commit]] de la respectiva transacción, no se puede realizar ninguna clase de #[em #[b rollback]] de los cambios. 
@@ -390,7 +391,7 @@
       .numero(style="background-color: #084a93; width: 24px; height: 24px").p-1.text-white.d-flex.justify-content-center.align-items-center.me-3 
         p.fw-bold.mb-0.text-center 1
       .contenido 
-        p Comandos, son las distintas instrucciones que se pueden ejecutar desde el lenguaje SQL: Seguridad de nivel alto.
+        p Comandos, son las distintas instrucciones que se pueden ejecutar desde el lenguaje SQL:
           br
           br
           |- #[em SELECT], este es el comando que permite realizar consultas de los datos almacenados en la base de datos 
@@ -437,17 +438,11 @@
               figure
                 img(src='@/assets/curso/temas/tema1/15.svg', alt='Texto que describa la imagen')
             div(x="90.2%" y="23.6%" tooltip="" numero="1")
-
-              h5.mb-2 DDL 
               p Lenguaje de definición de datos, que permite a los usuarios llevar a cabo las tareas de definición de las estructuras que almacenarán los datos. 
             div(x="90.2%" y="52%" tooltip="" numero="2")
-
-              h5.mb-2 DML 
               p Lenguaje de manipulación de datos, es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos. 
             div(x="90.2%" y="79.3%" tooltip="" numero="3")
-
-              h5.mb-2  DCL
-              p 
+              p Lenguaje de gestión de datos, contiene instrucciones mediante las cuales se realiza la asignación de derechos de acceso a la base de datos.
 </template>
 
 <script>

@@ -141,7 +141,7 @@
           ul.lista-ul--color
             li
               i.fas.fa-check
-              | Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución 
+              p.mb-0 Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución 
             li
               i.fas.fa-check
               | Actualmente las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores

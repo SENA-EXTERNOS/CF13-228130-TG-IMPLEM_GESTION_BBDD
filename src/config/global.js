@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Gestión de BD SQL',
     descripcionCurso:
-      'El componente formativo aborda cada uno de los tipos de lenguajes manejados en las bases de datos SQL, como es el caso del lenguaje de manipulación y el lenguaje para la creación de la misma base de datos. Además, se fundamentan las diferentes consultas y operaciones para su uso.  ',
+      'Este componente formativo, aborda cada uno de los tipos de lenguajes manejados en las bases de datos SQL, como es el caso del lenguaje de manipulación y el lenguaje para la creación de la misma base de datos. Además, se fundamentan las diferentes consultas y operaciones para su uso. ',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.svg'),
     imagenesDecorativasBanner: [
@@ -45,29 +45,15 @@ export default {
         nombreRuta: 'tema2',
         icono: 'far fa-file-alt',
         numero: '2',
-        titulo: 'Sentencias DDL.',
+        titulo: 'Sentencias DDL',
         desarrolloContenidos: true,
       },
       {
         nombreRuta: 'tema3',
         icono: 'far fa-file-alt',
         numero: '3',
-        titulo: 'Sentencias DML.',
+        titulo: 'Sentencias DML',
         desarrolloContenidos: true,
-        subMenu: [
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.1',
-            titulo: 'Operaciones',
-            hash: 't_3_1',
-          },
-          {
-            icono: 'far fa-file-alt',
-            numero: '3.2',
-            titulo: 'Sentencias de Agregación',
-            hash: 't_3_2',
-          },
-        ],
       },
       {
         nombreRuta: 'tema4',
@@ -119,34 +105,35 @@ export default {
   },
   complementario: [
     {
-      tema: 'Creación de Base de Datos en SQL',
+      tema: 'SQL Lenguaje de consulta relacional',
       referencia:
-        'Lozano, J. (2018). Creación y gestión de una base de datos con MySQL y phpMyAdmin.',
+        'Lozano, J. (2018). <i>Creación y gestión de una base de datos con MySQL y phpMyAdmin.</i>',
       tipo: 'Artículo',
       link:
         'https://tauja.ujaen.es/bitstream/10953.1/9445/1/TFG%20%285%29.pdf ',
     },
     {
-      tema: 'Lenguaje DDL',
-      referencia: 'El - masri,H. (2013). Data Definition Language (DDL).',
-      tipo: 'Artículo',
-      link: 'http://site.iugaza.edu.ps/hmasry/files/Lab2-DDL.pdf ',
-    },
-    {
-      tema: 'SQL',
+      tema: 'SQL Lenguaje de consulta relacional',
       referencia:
-        'Bisson, A. (2021). SQL: Fundamentos del lenguaje (con ejercicios corregidos)',
+        'Bisson, A. (2021). <i>SQL: Fundamentos del lenguaje (con ejercicios corregidos)</i>',
       tipo: 'Libro',
       link:
-        'https://www-eni-training-com.bdigital.sena.edu.co/portal/client/mediabook/home ',
+        'https://www-eni-training-com.bdigital.sena.edu.co/portal/client/mediabook/home',
     },
     {
-      tema: 'Operadores',
+      tema: 'SQL Lenguaje de consulta relacional',
       referencia:
-        'Wanumen, L. y Mosquera D. (2018). Arquitectura para la generación de consultas SQL usando lógica de conjuntos',
+        'Wanumen, L. y Mosquera D. (2018). <i>Arquitectura para la generación de consultas SQL usando lógica de conjuntos.</i>',
       tipo: 'Artículo',
       link:
         'https://revistas.udistrital.edu.co/index.php/visele/article/view/14343 ',
+    },
+    {
+      tema: 'Sentencias DDL',
+      referencia:
+        'El - masri,H. (2013). <i>Data Definition Language</i> (DDL).',
+      tipo: 'Artículo',
+      link: 'http://site.iugaza.edu.ps/hmasry/files/Lab2-DDL.pdf',
     },
   ],
   glosario: [
@@ -201,35 +188,35 @@ export default {
   referencias: [
     {
       referencia:
-        'Aragón, Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. Revista Cubana de Ciencias Informáticas.',
+        'Aragón, Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. <i>Revista Cubana de Ciencias Informáticas</i>.',
       link: 'https://www.redalyc.org/journal/3783/378365832012/html/',
     },
     {
       referencia:
-        'Beynon - Davies, P. (2018). Sistemas de bases de datos. Reverté. ',
+        'Beynon - Davies, P. (2018). <i>Sistemas de bases de datos</i>. Reverté. ',
       link:
         'https://books.google.es/books?hl=es&lr=&id=XjbeDwAAQBAJ&oi=fnd&pg=PR5&dq=bases+de+datos&ots=DIBXDRJPGU&sig=8sk6MPk4qc9zwSgjd7tiiFQFw94#v=onepage&q=bases%20de%20datos&f=false ',
     },
     {
       referencia:
-        'Bisson, A. (2021). SQL: Fundamentos Del Lenguaje (con Ejercicios Corregidos). 3ª Edición. Ediciones ENI. Recursos Informáticos. Web. ',
+        'Bisson, A. (2021). SQL: <i>Fundamentos Del Lenguaje (con Ejercicios Corregidos)</i>. 3ª Edición. Ediciones ENI. Recursos Informáticos. Web.',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_biblioteca_eniRIT4SQL',
     },
     {
       referencia:
-        'Cavique, L. (2021). Armadilhas em consultas SQL: em bases de dados relacionais. Recuperado el 27 de septiembre de 2022 de',
+        'Cavique, L. (2021). <i>Armadilhas em consultas SQL: em bases de dados relacionais</i>.',
       link: 'https://repositorioaberto.uab.pt/handle/10400.2/10695 ',
     },
     {
       referencia:
-        'Figueredo, L., Rodríguez, E., & Silva, Y. (2021). Softar, software educativo de álgebra relacional de bases de datos.',
+        'Figueredo, L., Rodríguez, E. & Silva, Y. (2021).<i> Softar, software educativo de álgebra relacional de bases de datos</i>. ',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1i756fj/TN_cdi_dialnet_primary_oai_dialnet_unirioja_es_ART0001500395 ',
     },
     {
       referencia:
-        'Martínez, D. (2019). Manual de bases de datos (Autoaprendizaje).',
+        'Martínez, D. (2019). Manual de bases de datos (<i>Autoaprendizaje</i>).',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_elibroELB175897',
     },

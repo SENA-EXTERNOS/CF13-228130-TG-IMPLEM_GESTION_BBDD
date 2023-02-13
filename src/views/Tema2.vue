@@ -7,8 +7,12 @@
         span 2
       h1 Sentencias DDL 
     p.mb-5(data-aos='fade-right') El lenguaje de definición de datos (Data Definition Language, o DDL), es el que se encarga de la modificación de la estructura de los objetos de la base de datos. Existen cuatro operaciones básicas: #[em CREATE, ALTER, DROP y TRUNCATE.] 
-    .row.justify-content-center.mb-5
+    .row.justify-content-center.mb-5 
       .col-lg-10(data-aos="zoom-in")
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Tabla 1 
+          br
+          span.fst-italic #[i Sentencias DDL]         
         .color-acento-contenido.mb-5
           table
             thead(style="background-color: #f6f6f6; border-top: 3")
@@ -42,20 +46,22 @@
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in") 
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 4.
-          span Sistema gestor de bases de datos 
+          h5 Figura 3
+          br
+          span #[i Sistema gestor de bases de datos MySQL]
         img(src='@/assets/curso/temas/tema2/1.jpg', alt='')
     p.mb-5(data-aos='fade-right') Para el uso de los comandos DDL nos guiaremos por el siguiente modelo de entidad/relación:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 5.
-          span Sistema gestor de bases de datos MySQL
+          h5 Figura 4
+          br
+          span #[i Sistema gestor de bases de datos MySQL]
         img(src='@/assets/curso/temas/tema2/2.svg', alt='')
     p.mb-5(data-aos='fade-right') En el siguiente video se puede observar el proceso de construcción de una base de datos en un gestor de bases de datos MySQL: 
     figure.mb-5
       .video
-        iframe(width="560" height="315" src="https://www.youtube.com/embed/OKVAMSzGM0s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
+        iframe(width="560" height="315" src="https://www.youtube.com/embed/mKwGLlItoHI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen)
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.bg-gradient.p-3.mb-5

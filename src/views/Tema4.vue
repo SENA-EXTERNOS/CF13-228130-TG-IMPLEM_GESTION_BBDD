@@ -6,24 +6,24 @@
       .titulo-principal__numero
         span 4
       h1 Subconsultas anidadas, vistas y otras características de SQL 
-    p.mb-5(data-aos='fade-right') En SQL, además de lo visto, se pueden realizar subconsultas anidadas, vistas y otros como: 
+    p.mb-5(data-aos='fade-right') En SQL, además de lo visto, se pueden realizar subconsultas anidadas, vistas y otras como:
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Índices
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/1.svg', alt='')
       .col-lg-11(data-aos="fade-left")
-        p Un índice es una estructura de datos definida sobre una columna de tabla (o varias) y que permite localizar de forma rápida las filas de la tabla con base a su contenido en la columna indexada, además, de permitir recuperar las filas de la tabla ordenadas por esa misma columna. (Figueredo, R, y Silva, Y. 2021). 
+        p Un índice es una estructura de datos definida sobre una columna de tabla (o varias), que permite localizar de forma rápida las filas de la tabla con base en su contenido en la columna indexada, además, de permitir recuperar las filas de la tabla, ordenadas por esa misma columna (Figueredo, R, y Silva, Y. 2021).
           br
           br
-          |#[b Tipos de índices:]
+          |#[b Tipos de índices]
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | Índice Simple, está definido sobre una sola columna de la tabla 
+            | Índice Simple, está definido sobre una sola columna de la tabla. 
           li
             i.fas.fa-check
-            | Índice compuesto, está definido por varias columnas de la misma tabla 
+            | Índice compuesto, está definido por varias columnas de la misma tabla. 
     .tarjeta--container.row.mb-5
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
@@ -98,20 +98,20 @@
           li
             i.fas.fa-check
             | El resultado de la subconsulta es empleado por la consulta principal.
-        p #[b Buenas prácticas para construir una subconsulta]
+        p #[b Buenas prácticas para construir una subconsulta:]
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | Una subconsulta va siempre entre paréntesis
+            | Una subconsulta va siempre entre paréntesis.
           li
             i.fas.fa-check
-            | La subconsulta no debe llevar una cláusula ORDER BY
+            | La subconsulta no debe llevar una cláusula ORDER BY.
           li
             i.fas.fa-check
-            | Para subconsultas que retornan una fila (monoregistro), emplear operadores a nivel de fila 
+            | Para subconsultas que retornan una fila (monoregistro), emplear operadores a nivel de fila. 
           li
             i.fas.fa-check
-            | Para subconsultas que retornan más de una fila (multiregistro), emplear operadores que actúen sobre varios registros
+            | Para subconsultas que retornan más de una fila (multiregistro), emplear operadores que actúen sobre varios registros.
         p #[b Subconsulta Monoregistro]
         ul.lista-ul--color
           li
@@ -180,9 +180,6 @@
             h4 Funciones de cadena 
             p Este tipo de funciones retornan un carácter o varios caracteres.
           .col-lg-6
-            .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-              h5 Tabla 8.
-              span Funciones de Cadena
             .color-acento-contenido.mb-5
               table.bg-white
                 thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -213,9 +210,6 @@
             h4 Funciones matemáticas  
             p Son aquellos comandos empleados en consultas SQL para trabajar con tipo de dato numérico. 
           .col-lg-6
-            .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-              h5 Tabla 9.
-              span Funciones Matemáticas 
             .color-acento-contenido.mb-5
               table.bg-white
                 thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -246,9 +240,6 @@
             h4 Funciones fecha-hora  
             p Funciones encargadas de la manipulación de fechas, y la extracción del día, mes, o año de una fecha correspondiente. 
           .col-lg-6
-            .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-              h5 Tabla 10. 
-              span Funciones fecha-hora
             .color-acento-contenido.mb-5
               table.bg-white
                 thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -273,9 +264,6 @@
             h4 Funciones del sistema
             p Son funciones más operativas cuyo desempeño radica en conversiones especiales del tipo de dato del valor de un registro para operaciones posteriores. 
           .col-lg-6
-            .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-              h5 Tabla 11.
-              span Funciones del sistema 
               .color-acento-contenido.mb-5
               table.bg-white
                 thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -319,8 +307,9 @@
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 12. 
-          span Operadores JOINS
+          h5 Tabla 4
+          br 
+          span #[i Operadores JOINS]
         .color-acento-contenido.mb-5
             table.bg-white
               thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -362,7 +351,7 @@
     .row.justify-content-center.mb-5
       .col-lg-8
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color:  #fff4da")
-          p.mb-0 Recuerde que el componente formativo dispone de más recursos que se ubican en este, para ello diríjase al menú principal en donde encontrará entre otros, la síntesis, una actividad didáctica, material complementario. 
+          p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.
 
             
 </template>

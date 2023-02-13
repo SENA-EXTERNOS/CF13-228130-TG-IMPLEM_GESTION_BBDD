@@ -14,7 +14,7 @@
             template(v-slot:imagen)
               figure
                 img(src='@/assets/curso/temas/tema3/1.svg', alt='Texto que describa la imagen')
-            div(x="61.2%" y="9.6%" tooltip="" numero="1")
+            div(x="61.2%" y="9.6%" tooltip="Ver mas" numero="1")
               p #[em INSERT], Insertar información en una tabla de base de datos 
               p.ms-4 
                 span.cod1 INSERT INTO 
@@ -23,7 +23,7 @@
                 span.cod1 (´1962-03-17´, 
                 span.cod4 27875677,
                 span.cod2 ´Robles´, ´Carlos´ );
-            div(x="43.5%" y="34.6%" tooltip="" numero="2")
+            div(x="43.5%" y="33%" tooltip="Ver mas" numero="2")
               p #[em UPDATE], Actualizar (modificar) información en las tablas de bases de datos 
               p.ms-4 
                 span.cod1 UPDATE 
@@ -37,7 +37,7 @@
                 span.cod2 ´Id´ 
                 span.cod3 = 
                 span.cod4 284
-            div(x="43.5%" y="66.8%" tooltip="" numero="3")
+            div(x="43.5%" y="66.8%" tooltip="Ver mas" numero="3")
               p DELETE, Eliminar información de una base de datos
               p.ms-4 
                 span.cod1 DELETE FROM 
@@ -47,7 +47,7 @@
                 span.cod2 ´Apellido´ 
                 span.cod3 = 
                 span.cod2 ´Pereira´ ;
-            div(x="61.2%" y="90.6%" tooltip="" numero="4")
+            div(x="61.2%" y="90.6%" tooltip="Ver mas" numero="4")
               p SELECT, Selección de información de la base de datos
               p.ms-4 
                 span.cod1 SELECT  
@@ -62,8 +62,9 @@
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 2. 
-          span Sentencias DML 
+          h5 Tabla 2
+          br
+          span #[i Sentencias DML]
         .color-acento-contenido.mb-5
           table
             thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -99,9 +100,6 @@
             br
             |Observando la instrucción del registro (Insert) a la tabla almacen, hay que tener en cuenta que al realizar el insertado de datos debemos ingresar la misma cantidad de campos que contiene la tabla, en el ejemplo anterior son 4 campos (columnas),  hay que referenciar bien el tipo de texto, podemos ver que el primer valor es (1) como es un valor tipo numérico  va escrito directamente, pero como los otros campos está declarado tipo texto va entre comillas dobles el valor correspondiente (“value”). 
         .col-lg-4
-          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 6.
-            span Comando #[em INSERT]
           img(src='@/assets/curso/temas/tema3/2.jpg', alt='')
       .row(titulo="Actualización y de datos <em>(UPDATE) </em>").ps-5
         .col-lg-8
@@ -127,13 +125,7 @@
             br
             |“#[em UPDATE vendedor SET telefono = "3002101858" WHERE codigo = 521;]” 
         .col-lg-4
-          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 7.
-            span Registro sin Modificar  
           img(src='@/assets/curso/temas/tema3/3.jpg', alt='').mb-4
-          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 8.
-            span Registro Modificado 
           img(src='@/assets/curso/temas/tema3/4.jpg', alt='')
       div(titulo="Eliminacion de datos <em>(DELETE</em>)").ps-5
         p La sentencia DELETE sirve para borrar filas de una tabla. La sintaxis de SQL DELETE es: 
@@ -194,9 +186,7 @@
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo2.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
-    Separador
-    #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 3.1 Operaciones
+
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-lg-11
         .bloque-texto-g.color-acento-botones.p-3.p-sm-4.p-md-5.bloque-derecha
@@ -217,7 +207,6 @@
             br
             |Listados de operadores de comparación que se utilizan en consultas SQL 
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Tabla 3. 
             span Operadores de Comparación
           .color-acento-contenido.mb-5
             table.bg-white
@@ -260,12 +249,10 @@
             br
             | Implementación del operador igual (=) en una consulta
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 9. 
             span Operador igual (=)
           img(src='@/assets/curso/temas/tema3/4.png', alt='')
           p Implementación del operador diferente en una consulta 
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 10. 
             span Operador Diferente (<>)
           img(src='@/assets/curso/temas/tema3/5.png', alt='')
 
@@ -276,7 +263,6 @@
             br
             |En la tabla a continuación se puede evidenciar la variedad de operadores aritméticos: 
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Tabla 4 
             span Operadores aritméticos
           .color-acento-contenido.mb-5
             table.bg-white
@@ -331,7 +317,6 @@
             br
             |Lista de operadores lógicos empleados en consultas SQL
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Tabla 5.
             span Operadores Lógicos 
           .color-acento-contenido.mb-5
             table.bg-white
@@ -359,7 +344,6 @@
             br
             |El operador AND devuelve verdadero si ambas expresiones son verdaderas, y falso en cualquier otro caso. Supongamos que queremos consultar ¿qué personas son rubias y altas?, realizamos la siguiente consulta SQL: 
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-            h5 Figura 11.
             span Operador #[em AND]
           img(src='@/assets/curso/temas/tema3/6.png', alt='')
 
@@ -369,7 +353,6 @@
           br
           |Listado de operadores lógicos en SQL 
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 6. 
           span Operadores de Conjuntos
         .color-acento-contenido.mb-5
             table.bg-white
@@ -390,15 +373,14 @@
                   td.fst-italic.text-center
                     | EXCEPT 
                   td Tomando como referencia dos consultas, el #[em EXCEPT] retorna los registros de la primera consulta que no estén en la segunda consulta. 
-    Separador
-    #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 3.2 Sentencias de agregación
+
     p.mb-5(data-aos='fade-right') Las sentencias de agregación son implementadas, por una parte, al realizar operaciones sobre un conjunto de datos, pero devolviendo un único valor agregado sobre todos los datos. Es decir, permite realizar promedio, conteo, máximos, mínimo, etc. En la tabla a continuación se especifica cada uno de ellos y su respectiva descripción:
     .row.justify-content-center.mb-5
       .col-lg-10 
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 6. 
-          span Operadores de Conjuntos
+          h5 Tabla 3
+          br
+          span #[i Sentencias de Agregación]
         .color-acento-contenido.mb-5
           table.bg-white
             thead(style="background-color: #f6f6f6; border-top: 3px solid #ffb30b")
@@ -449,8 +431,9 @@
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 12. 
-          span Consulta con comando #[em ORDER BY - DESC]
+          h5 Figura 5
+          br
+          span #[em Consulta con comando ORDER BY - DESC]
         img(src='@/assets/curso/temas/tema3/7.png', alt='')
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema3/5.svg', alt='')
@@ -465,8 +448,8 @@
     .row.justify-content-center.mb-5
       .col-lg-4(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 13. 
-          span Consulta con la función #[em MAX]
+          h5 Figura 6 
+          span #[em Consulta con la función MAX]
         img(src='@/assets/curso/temas/tema3/8.png', alt='')
         
         

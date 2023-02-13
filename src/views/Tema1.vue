@@ -24,56 +24,56 @@
       .col-lg-8(data-aos="fade-left")
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2")
           div(titulo="Lenguaje de definición de datos (DDL)").ps-5
-            p El lenguaje de definición de datos (DDL), es el encargado de construir el contexto de la base de datos especificando su esquema correspondiente y la organización de los datos. El uso más común de este tipo de lenguaje comprende la creación de tablas, disparadores, índices, archivos y columnas dentro de las tablas de la base de datos. Además, también permite eliminar o renombrar los componentes creados en una base de datos. A continuación, un listado de los diferentes comandos empleados para estas tareas: 
+            p El lenguaje de definición de datos DDL, es el encargado de construir el contexto de la base de datos especificando su esquema correspondiente y la organización de la información. El uso más común de este tipo de lenguaje, comprende la creación de tablas, disparadores, índices, archivos y columnas dentro de las tablas de la base de datos. Además, también permite eliminar o renombrar los componentes creados en una base de datos. A continuación, un listado de los diferentes comandos empleados para estas tareas:
             ul.lista-ul--color
               li
                 i.fas.fa-check
                 p.mb-0 #[em CREATE:] encargado de construir una nueva base de datos u objeto, como una tabla, columna, índice, etc. 
               li
                 i.fas.fa-check
-                p.mb-0 #[em ALTER:] cambia la estructura de la base de datos o del objeto
+                p.mb-0 #[em ALTER:] cambia la estructura de la base de datos o del objeto.
               li
                 i.fas.fa-check
-                p.mb-0 #[em DROP:] elimina la base de datos o los objetos existentes 
+                p.mb-0 #[em DROP:] elimina la base de datos o los objetos existentes.
               li
                 i.fas.fa-check
-                p.mb-0 #[em RENOMBRAR:] cambiar el nombre de la base de datos o de los objetos existentes
+                p.mb-0 #[em RENOMBRAR:] cambiar el nombre de la base de datos o de los objetos existentes.
           div(titulo="Lenguaje de manipulación de datos (DML)").ps-5
-            p El Lenguaje de manipulación de datos (DML), como su nombre lo dice, me permite la manipulación de los datos en la base de datos, además proporciona diferentes operaciones encargadas de realizar las peticiones en la base de datos, con el objetivo de actualizar la información, búsqueda de información y acceso a los datos. Entre las funciones u operaciones más comunes están:
+            p El Lenguaje de manipulación de datos DML, como su nombre lo dice, permite la manipulación de los datos en la base de datos y además proporciona diferentes operaciones encargadas de realizar las peticiones en la base de datos, con el objetivo de actualizar la información, búsqueda de información y acceso a los datos. Entre las funciones y operaciones más comunes están:
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | INSERTAR: insertar nuevos datos en la base de datos 
+                | INSERTAR: insertar nuevos datos en la base de datos.
               li
                 i.fas.fa-check
-                | ACTUALIZACIÓN: cambia o actualiza los valores de la tabla 
+                | ACTUALIZACIÓN: cambia o actualiza los valores de la tabla.
               li
                 i.fas.fa-check
-                | BORRAR: elimina registros o filas de la tabla 
+                | BORRAR: elimina registros o filas de la tabla. 
               li
                 i.fas.fa-check
-                | CONSULTAR: encargado de la recuperación de los datos de las tablas
+                | CONSULTAR: encargado de la recuperación de los datos de las tablas.
           div(titulo="Lenguaje de control de datos (DCL) ").ps-5
-            p El lenguaje de control de datos (DCL) es el encargado de controlar el acceso a los datos que los usuarios guardan en una base de datos. Fundamentalmente, controla los derechos y permisos en un sistema gestor de base de datos. También permite a los usuarios revocar o conceder privilegios. A continuación, una lista de sentencias DCL: 
+            p El lenguaje de control de datos DCL, es el encargado de controlar el acceso a los datos que los usuarios guardan en una base de datos. Fundamentalmente, controla los derechos y permisos en un sistema gestor de base de datos. También permite a los usuarios revocar o conceder privilegios. A continuación, una lista de sentencias DCL:
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                | GRANDES: da acceso a un usuario a la base de datos
+                | GRANDES: da acceso a un usuario a la base de datos.
               li
                 i.fas.fa-check
-                | REVOCACIÓN: elimina el acceso de un usuario a la base de datos
+                | REVOCACIÓN: elimina el acceso de un usuario a la base de datos.
           div(titulo="Lenguaje de control de transacciones (TCL) ").ps-5
-            p El lenguaje de control de transacciones (TCL) es el encargado de gestionar las transacciones en la base de datos. Generalmente las transacciones que se realizan en una base de datos se agrupan en un conjunto de tareas relacionadas en una única tarea ejecutable. Todas las tareas deben ser exitosas para que la transacción fluya con normalidad. A continuación, una lista de sentencias TCL: 
+            p El lenguaje de control de transacciones TCL, es el encargado de gestionar las transacciones en la base de datos. Generalmente las transacciones que se realizan en una base de datos, se agrupan en un conjunto de tareas relacionadas en una única tarea ejecutable. Todas las tareas deben ser exitosas para que la transacción fluya con normalidad. A continuación, una lista de sentencias TCL:
             ul.lista-ul--color
               li
                 i.fas.fa-check
-                p.mb-0 COMPROMISO: ejecuta una operación
+                p.mb-0 COMPROMISO: ejecuta una operación.
               li
                 i.fas.fa-check
-                p.mb-0 #[em ROLLBACK:] restaura una operación si alguna transacción falla 
+                p.mb-0 #[em ROLLBACK:] restaura una operación si alguna transacción falla.
               li
                 i.fas.fa-check
-                p.mb-0 #[em S** AVEPOINT**:] establece un punto en una transacción para guardar
+                p.mb-0 #[em S** AVEPOINT**:] establece un punto en una transacción para guardar.
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B   ").me-3.mb-0
       h3.mb-0 Lenguajes de bases de datos 
@@ -123,53 +123,58 @@
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Gestores de bases de datos transaccionales 
     p.mb-5(data-aos='fade-right') Antes de abordar la temática de los diferentes gestores de bases de datos transaccionales, tenemos que definir y revisar las bases de datos transaccionales. 
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-4.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/6.svg', alt='')
-      .col-lg-8(data-aos="fade-left")
-        h4 Bases de datos transaccionales 
 
+    .row.justify-content-center.mb-5
+      .col-lg-5(data-aos="zoom-in")
+        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+          h5 Figura 1 
+          br
+          span.fst-italic Estructura de transacción 
+        img.img-a.img-t(src='@/assets/curso/temas/tema1/16.svg', alt='').mb-3
+        figcaption Nota. Reproducida de Bases de datos transaccionales: características y beneficios. Tecnologías (s.f.).  
+      .col-lg-7        
         p Son bases de datos con el objetivo de enviar y recepcionar datos a una gran velocidad. Están calificadas, generalmente, al entorno de análisis de calidad, diferentes datos de producción industrial, pero su principal objetivo radica en asegurar las transacciones dentro de una base de datos relacional, en caso de que no se puedan realizar poder revertirlas, para evitar que queden incompletas, es decir, se realiza la transacción o no hay ninguna acción en la base de datos (vuelve al estado original). 
           br
           br
-          |Las bases de datos transaccionales utilizan lenguaje SQL, que permite el acceso y la modificación de los datos dentro de las bases de datos. 
+          |Las bases de datos transaccionales utilizan lenguaje SQL, que permite el acceso y la modificación de los datos dentro de las bases de datos.
 
-        h4 Características de las bases de datos transaccionales 
-        p La principal característica en este tipo de base de datos es que garantice llevar a terminación un gran número de transacciones cortas en línea, permitiendo a su vez, contar con una información actualizada y detallada al instante. Garantiza altos niveles de efectividad al mantener la integridad de los datos en ambientes de acceso múltiples.
+        h4 Características de las bases de datos transaccionales
+        p La principal característica en este tipo de base de datos, es que garantiza llevar a terminación una gran cantidad de transacciones cortas en línea, permitiendo, a su vez, contar con una información actualizada y detallada al instante. Asegura altos niveles de efectividad, al mantener la integridad de los datos en ambientes de acceso múltiples. 
     div(style="background-color: #00defc").p-3.mb-5
       .border-dash.p-3(style='border-color: #084a93')
         .bg-white.p-4
           ul.lista-ul--color
             li
               i.fas.fa-check
-              p.mb-0 Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución 
+              p.mb-0 Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución. 
             li
               i.fas.fa-check
-              | Actualmente las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores
+              | Actualmente las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores.
             li
               i.fas.fa-check
-              | Están optimizadas para realizar actualizaciones rápidas y cortas para los usuarios finales
+              | Están optimizadas para realizar actualizaciones rápidas y cortas para los usuarios finales.
             li
               i.fas.fa-check
-              | Poseen una gran velocidad de procesamiento, donde permite consultar y obtener datos de forma rápida y eficiente 
+              | Poseen una gran velocidad de procesamiento, donde permite consultar y obtener datos de forma rápida y eficiente. 
             li
               i.fas.fa-check
-              | Ocupan poco espacio
+              | Ocupan poco espacio.
             li
               i.fas.fa-check
-              | Comprende un diseño normalizado basado en tablas
-    p.mb-5(data-aos='fade-right') Los gestores de base de datos transaccionales son implementados para mantener las bases de datos en un estado consistente y conocido, garantizando que todas las operaciones que son independientemente ejecutadas sobre la base datos se completen totalmente o se han canceladas en su defecto.  
+              | Comprenden un diseño normalizado basado en tablas.
+    p.mb-5(data-aos='fade-right') Los gestores de base de datos transaccionales, son implementados para mantener las bases de datos en un estado consistente y conocido, garantizando que todas las operaciones que son independientemente ejecutadas sobre la base datos, se completen totalmente o sean canceladas en su defecto. 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon-adorno.color-acento-contenido.p-4(style="background-color: #fff4da")
           h5 Ejemplo: 
-          p Si tenemos que realizar una transacción bancaria de mover $ 500.000 pesos de la cuenta de un cliente a otra. Desde el punto de vista del banco es una transacción única, desde la visión del sistema se requiere mínimo dos operaciones: 
+          p Si tenemos que realizar una transacción bancaria de mover $500 000 pesos de la cuenta de un cliente a otra. Desde el punto de vista del banco, es una transacción única, desde la visión del sistema, se requieren, mínimo, dos operaciones:
           ul.lista-ul--color
             li
               i.fas.fa-check
-              | Restar de la cuenta origen el valor requerido
+              | Restar de la cuenta origen el valor requerido.
             li
               i.fas.fa-check
-              | Sumar el valor correspondiente la cuenta destino
+              | Sumar el valor correspondiente la cuenta destino.
     .row.justify-content-center.mb-5
       .col-lg-4.col-6.mb-lg-0.mb-3(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/7.svg', alt='')
       .col-lg-8(data-aos="fade-left")
@@ -186,21 +191,21 @@
       h3.mb-0 Restricciones de integridad 
     .row.justify-content-center.mb-5
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
-        p Las restricciones de integridad tienen como objetivo, de forma general, el proporcionar un medio que garantice que los cambios que se realizan en la base de datos por los diferentes usuarios autorizados no concluyan en una pérdida de consistencia de los datos.
+        p Las restricciones de integridad tienen como objetivo, proporcionar un medio que garantice que los cambios que se realizan en la base de datos por los diferentes usuarios autorizados, no concluyan en una pérdida de consistencia de los datos.
           br
           br
           |Las restricciones de integridad se componen de las siguientes características:
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | Se refiere a la correlación de la información que contiene la base de datos  
+            | Se refiere a la correlación de la información que contiene la base de datos.  
           li
             i.fas.fa-check
-            |  La verificación de integridad se puede implementar mediante programas
+            |  La verificación de integridad se puede implementar mediante programas.
           li
             i.fas.fa-check
-            | El sistema es el encargado de realizar esta verificación   
-        p Existen 3 tipos de restricciones de integridad: 
+            | El sistema es el encargado de realizar esta verificación.   
+        p Existen 3 tipos de restricciones de integridad:
       .col-lg-5.col-6: img(src='@/assets/curso/temas/tema1/8.png', alt='')
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2")
       div(titulo="Restricciones de unicidad").ps-5
@@ -226,7 +231,7 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | En una base de datos de una clínica: 
+            | En una base de datos de una clínica:
             li.ms-3
               i.fas.fa-circle.fa-xxs
               | Los pacientes no pueden llevar el peso corporal negativo.
@@ -235,29 +240,30 @@
             | En una base de datos bancaria: 
             li.ms-3
               i.fas.fa-circle.fa-xxs
-              | Los números que identifican a las sucursales no pueden ser negativos 
+              | Los números que identifican a las sucursales no pueden ser negativos. 
 
             li.ms-3
               i.fas.fa-circle.fa-xxs
-              |  Los códigos de departamentos y ciudades deben proveer de una lista estandarizada
-        p El lenguaje SQL estándar comprende un conjunto restringido de dominio: cadena de caracteres, números decimales, numero enteros, fecha, booleanos, etc. 
+              |  Los códigos de departamentos y ciudades deben proveer de una lista estandarizada.
+
+        p El lenguaje SQL estándar comprende un conjunto restringido de dominio: cadena de caracteres, números decimales, números enteros, fecha, booleanos, etc.
           br
           br
           |El modelo relacional comprende dos reglas generales de integridad:
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | Se aplica a todas las bases de datos 
+            | Se aplica a todas las bases de datos. 
           li
             i.fas.fa-check
-            | Estas reglas se enfocan en las claves primarias y claves foráneas  
-      div(titulo="Restricciones referenciales  ").ps-5
-        p Las bases de datos correspondientes no deben contener valores nulos de una clave ajena, donde a su vez no existiría una clave primaria en la relación.    
+            | Estas reglas se enfocan en las claves primarias y claves foráneas.  
+      div(titulo="Restricciones referenciales").ps-5
+        p Las bases de datos correspondientes no deben contener valores nulos de una clave ajena, donde, a su vez no, existiría una clave primaria en la relación.   
 
           br
-          |Clave ajena o clave foránea  
+          |#[b Clave ajena o clave foránea]
           br
-          |Una clave ajena es un atributo o conjunto de atributos de una relación donde los valores son similares a los de la clave primaria que participan en la relación.  
+          |Una clave ajena es un atributo o conjunto de atributos de una relación donde los valores son similares a los de la clave primaria, los cuales participan en la relación. 
 
           br
           br
@@ -265,64 +271,62 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | En una base de datos bancaria se tiene una entidad cliente y otra entidad cuenta. En la entidad cliente tiene una clave primaria id_cliente donde se relaciona con una entidad cuenta, para definir en qué entidad lleva la clave ajena (foránea) que representa la relación entre las dos entidades, se procede a establecer la cardinalidad: 
+            | En una base de datos bancaria, se tiene una entidad cliente y otra entidad cuenta. En la entidad cliente tiene una clave primaria id_cliente donde se relaciona con una entidad cuenta, para definir en qué entidad lleva la clave ajena (foránea) que representa la relación entre las dos entidades; se procede entonces a establecer la cardinalidad:
             li.ms-3
               i.fas.fa-circle.fa-xxs
-              |  Una cuenta le pertenece a un solo cliente  
+              |  Una cuenta le pertenece a un solo cliente.  
             li.ms-3
               i.fas.fa-circle.fa-xxs
-              | Un cliente puede tener de una a muchas cuentas
-        p #[b En conclusión], la clave ajena está localizada en la entidad cuenta, y su respectivo atributo lleva un nombre y el tipo de dato debe ser exactamente igual a la clave primaria de la entidad cliente.  
+              | Un cliente puede tener de una a muchas cuentas.
+        p #[b En conclusión], la clave ajena está localizada en la entidad cuenta, y su respectivo atributo lleva un nombre y el tipo de dato debe ser exactamente igual a la clave primaria de la entidad cliente. 
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Administradores de bases de datos (DBMS) 
     .row.justify-content-center.align-items-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema1/9.svg', alt='')
       .col-lg-11(data-aos="fade-left")
-        p.mb-0 El sistema de gestión de la base de datos (SGBD) es una aplicación que permite a los usuarios definir, crear y mantener la base de datos, además de proporcionar un acceso controlado a la misma. Se denomina sistema de bases de datos al conjunto formado por la base de datos, el SGBD y los programas de aplicación que dan servicio a la empresa u organización, (Beynon, 2018). 
+        p.mb-0 El sistema de gestión de la base de datos (SGBD) es una aplicación que permite a los usuarios definir, crear y mantener la base de datos, además de proporcionar un acceso controlado a la misma. Se denomina sistema de bases de datos al conjunto formado por la base de datos, el SGBD y los programas de aplicación que dan servicio a la empresa u organización. (Beynon, 2018). 
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 1 
-          span DBMS 
+          h5 Figura 2
+          br
+          span #[i DBMS] 
         img(src='@/assets/curso/temas/tema1/10.svg', alt='').mb-3
         figcaption Nota. Reproducida de Manejadores de base de datos. Ewebik (2022).
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Herramientas más usadas para trabajar bases de datos 
-    p.mb-5(data-aos='fade-right') Actualmente se encuentran aplicaciones que se pueden utilizar para trabajar bases de datos SQL y NoSQL, definimos algunas de ellas a continuación:
+    p.mb-5(data-aos='fade-right') Actualmente, se encuentran aplicaciones que se pueden utilizar para trabajar bases de datos SQL y NoSQL; definimos algunas de ellas a continuación: 
     .row.justify-content-center.mb-5
       .col-lg-4.col-6.mb-lg-0.mb-3(data-aos="fade-right")
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 2. 
-          span Motores de bases de datos 
         img(src='@/assets/curso/temas/tema1/11.jpg', alt='').mb-3
         figcaption Nota. Adaptada de Los gestores de bases de datos más usados en la actualidad. Marín, R. (2019).
       .col-lg-8(data-aos="fade-left")
         AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2")
           div(titulo="MySQL").ps-5
             p Es un sistema de gestión de bases de datos relacional, es la de código abierto más popular en el mundo, se ha convertido en la principal opción en bases de datos para aplicaciones basadas en la Web. 
-          div(titulo="PostgreSQL  ").ps-5
+          div(titulo="PostgreSQL").ps-5
             p Es un SGBD relacional orientado a objetos y libre, publicado bajo la licencia BSD. Como muchos otros proyectos de código abierto, el desarrollo no es manejado por una organización o persona, es dirigido por una comunidad de desarrolladores que trabajan sin ánimo de lucro. Sin embargo, hay que resaltar que PostgreSQL es un motor robusto para las bases de datos. 
-          div(titulo="SQL Server ").ps-5
+          div(titulo="SQL Server").ps-5
             p Es un sistema de gestión de bases de datos relacional desarrollado por Microsoft, está diseñado para el entorno empresarial. SQL Server se ejecuta en T-SQL (Transact -SQL), un conjunto de extensiones de programación de Sybase y Microsoft que añaden varias características a SQL estándar, incluyendo control de transacciones, excepción y manejo de errores, procesamiento fila, así como variables declaradas.
-          div(titulo="ORACLE ").ps-5
-            p Es un sistema gestor de bases de datos con características objeto-relacional, pertenece al modelo evolutivo SGBD, sus características principales son las siguientes: 
+          div(titulo="ORACLE").ps-5
+            p Es un sistema gestor de bases de datos con características objeto-relacional, pertenece al modelo evolutivo SGBD, sus características principales son las siguientes:
               br
               br
-              | - Entorno cliente-servidor 
+              | - Entorno cliente-servidor. 
               br
-              | - Gestión de grandes bases de datos 
+              | - Gestión de grandes bases de datos. 
               br
-              | - Usuarios concurrentes 
+              | - Usuarios concurrentes. 
               br
-              | - Alto rendimiento en transacciones 
+              | - Alto rendimiento en transacciones. 
               br
-              | - Sistema de alta disponibilidad 
+              | - Sistema de alta disponibilidad. 
               br
-              | - Gestión de seguridad 
+              | - Gestión de seguridad. 
               br
-              | - Compatibilidad 
+              | - Compatibilidad. 
           div(titulo="Cassandra ").ps-5
             p Es una base de datos NoSQL distribuida y basada en un modelo de almacenamiento de “clave-valor”, de código abierto que está escrita en Java. Permite grandes volúmenes de datos en forma distribuida, usada por grandes compañías como Facebook y Twitter. 
           div(titulo="MongoDB").ps-5
@@ -340,9 +344,6 @@
                 br
                 |Se trata de un lenguaje que intenta agrupar todas las funciones que se le pueden pedir a una base de datos, por lo que es el lenguaje utilizado tanto por administradores como por programadores o incluso usuarios avanzados. (Mendoza, A., y López, R. 2018). 
       .col-lg-3.col-6(data-aos="fade-left")
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 3. 
-          span Logo Lenguaje SQL
         img(src='@/assets/curso/temas/tema1/12.svg', alt='')
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
@@ -429,7 +430,7 @@
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Lenguaje de consulta relacional 
-    p.mb-5(data-aos='fade-right') El lenguaje de consulta relacional es un lenguaje informático utilizado generalmente para realizar consultas a las bases de datos, su principal objetivo es realizar búsquedas para modificar o seleccionar datos de una base de datos. Los lenguajes relacionales más relevantes son el cálculo, el algebra relacional y el SQL. 
+    p.mb-5(data-aos='fade-right') El lenguaje de consulta relacional es un lenguaje informático utilizado generalmente para realizar consultas en las bases de datos; su principal objetivo es el de realizar búsquedas para modificar o seleccionar datos de una base de datos. Los lenguajes relacionales más relevantes son: el cálculo, el álgebra relacional y el SQL:
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .modal-prop
@@ -437,11 +438,11 @@
             template(v-slot:imagen)
               figure
                 img(src='@/assets/curso/temas/tema1/15.svg', alt='Texto que describa la imagen')
-            div(x="90.2%" y="23.6%" tooltip="" numero="1")
+            div(x="90.2%" y="23.6%" tooltip="Ver mas" numero="1")
               p Lenguaje de definición de datos, que permite a los usuarios llevar a cabo las tareas de definición de las estructuras que almacenarán los datos. 
-            div(x="90.2%" y="52%" tooltip="" numero="2")
+            div(x="90.2%" y="52%" tooltip="Ver mas" numero="2")
               p Lenguaje de manipulación de datos, es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos. 
-            div(x="90.2%" y="79.3%" tooltip="" numero="3")
+            div(x="90.2%" y="79.3%" tooltip="Ver mas" numero="3")
               p Lenguaje de gestión de datos, contiene instrucciones mediante las cuales se realiza la asignación de derechos de acceso a la base de datos.
 </template>
 

@@ -219,22 +219,22 @@
                 tbody
                   tr
                     td.fst-italic.text-center AVG 
-                    td Se calcula un promedio de la columna de un registro 
+                    td Se calcula un promedio de la columna de un registro. 
                   tr
                     td.fst-italic.text-center CEILING 
-                    td Obtiene el “techo” de un número, es decir, el valor entero superior más cercano al parámetro de entrada 
+                    td Obtiene el “techo” de un número, es decir, el valor entero superior más cercano al parámetro de entrada. 
                   tr
                     td.fst-italic.text-center FLOOR
-                    td Obtiene el “piso” de un número, es decir, el valor entero inferior más cercano al parámetro de entrada
+                    td Obtiene el “piso” de un número, es decir, el valor entero inferior más cercano al parámetro de entrada.
                   tr
                     td.fst-italic.text-center ROUND
-                    td Redondea el valor del número decimal a un entero, dependiendo del número después del operador decimal
+                    td Redondea el valor del número decimal a un entero, dependiendo del número después del operador decimal.
                   tr
                     td.fst-italic.text-center TRUNC
-                    td Elimina los decimales de un número, retornando solo el número entero
+                    td Elimina los decimales de un número, retornando solo el número entero.
                   tr
                     td.fst-italic.text-center SIGN
-                    td Retorna el signo (positivo o negativo) de un número 
+                    td Retorna el signo (positivo o negativo) de un número. 
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
             h4 Funciones fecha-hora  
@@ -249,16 +249,16 @@
                 tbody
                   tr
                     td.fst-italic.text-center  DAY 
-                    td Función para obtener el día según fecha indicada 
+                    td Función para obtener el día según fecha indicada. 
                   tr
                     td.fst-italic.text-center GETDATE
-                    td Función para obtener la fecha del sistema 
+                    td Función para obtener la fecha del sistema. 
                   tr
                     td.fst-italic.text-center MONTH 
-                    td Función para obtener el mes según fecha indicada
+                    td Función para obtener el mes según fecha indicada.
                   tr
                     td.fst-italic.text-center YEAR
-                    td Función para obtener el año según fecha indicada
+                    td Función para obtener el año según fecha indicada.
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
             h4 Funciones del sistema
@@ -273,13 +273,13 @@
                 tbody
                   tr
                     td.fst-italic.text-center CAST 
-                    td Permite convertir temporalmente el valor de un campo de un tipo de datos a otro para que puedas realizar algunos cálculos 
+                    td Permite convertir temporalmente el valor de un campo de un tipo de datos a otro para que puedas realizar algunos cálculos. 
                   tr
                     td.fst-italic.text-center CONVERT 
                     td Permiten cambiar el tipo de una columna durante la sentencia SQ.
                   tr
                     td.fst-italic.text-center ISNULL
-                    td Retorna el reemplazo si la expresión se evalúa como #[em NULL]
+                    td Retorna el reemplazo si la expresión se evalúa como #[em NULL].
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Consultas combinadas DML 
@@ -319,20 +319,20 @@
               tbody
                 tr
                   td.fst-italic.text-center INNER JOIN  
-                  td Retorna sólo aquellas filas donde haya un “<i>match</i>”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B 
+                  td Retorna sólo aquellas filas donde haya un “<i>match</i>”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B. 
                 tr
                   td.fst-italic.text-center LEFT OUTER JOIN 
                   td Retorna todas las filas que sean similares, pero también aquellas de la Tabla A que no sean similares. 
 
                 tr
                   td.fst-italic.text-center RIGTH OUTER JOIN 
-                  td Exactamente lo mismo, pero a la inversa, cuando se requiere listar las filas de la tabla B, aunque no estén relacionadas con ninguna fila de la tabla A
+                  td Exactamente lo mismo, pero a la inversa, cuando se requiere listar las filas de la tabla B, aunque no estén relacionadas con ninguna fila de la tabla A.
                 tr
                   td.fst-italic.text-center  FULL OUTER JOIN
                   td Es como la suma de los dos anteriores comandos. Queremos tanto las filas de la A como las de B, tanto si hay match como si no. 
                 tr
                   td.fst-italic.text-center CROSS JOIN  
-                  td Se utiliza para generar una combinación emparejada de cada fila de la primera tabla con cada fila de la segunda tabla 
+                  td Se utiliza para generar una combinación emparejada de cada fila de la primera tabla con cada fila de la segunda tabla. 
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.bg-gradient.p-3.mb-5

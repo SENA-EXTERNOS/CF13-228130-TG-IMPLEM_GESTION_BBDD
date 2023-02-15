@@ -119,7 +119,7 @@
             | Este tipo de consulta devuelve un único registro como resultado.
           li
             i.fas.fa-check
-            | Se implementan operadores de comparación #[b (<, >, =, <=, >=, < >)] 
+            p.mb-0 Se implementan operadores de comparación  #[b  (<, >, =, <=, >=, < >)]. 
     .cajon-adorno.color-acento-contenido.p-4.mb-5(style="background-color: #fff4da")
         p #[b Ejemplo:] 
           br
@@ -168,7 +168,7 @@
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0.text-white
                   h3.mb-1 Funciones DML 
-                  p.text-small Para ver ejemplos de estas funciones puede consultar el documento anexo. t 
+                  p.text-small Para ver ejemplos de estas funciones puede consultar el documento anexo.
                 .col-sm-auto
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo3.pdf')" target="_blank")
                     span Descargar
@@ -189,22 +189,22 @@
                 tbody
                   tr
                     td.fst-italic.text-center LOWER
-                    td Convierte la cadena en letras minúsculas 
+                    td Convierte la cadena en letras minúsculas. 
                   tr
                     td.fst-italic.text-center UPPER
-                    td Convierte la cadena en letras mayúsculas
+                    td Convierte la cadena en letras mayúsculas.
                   tr
                     td.fst-italic.text-center REPLACE
-                    td Retorna la cadena nueva por la cadena que se requiere reemplazar
+                    td Retorna la cadena nueva por la cadena que se requiere reemplazar.
                   tr
                     td.fst-italic.text-center STR 
-                    td Convierte número en una cadena de caracteres de la longitud especificada en longitud
+                    td Convierte número en una cadena de caracteres de la longitud especificada en longitud.
                   tr
                     td.fst-italic.text-center SUBSTRING
-                    td Retorna la subcadena a buscar, dependiendo de los parámetros para el recorte de la cadena original 
+                    td Retorna la subcadena a buscar, dependiendo de los parámetros para el recorte de la cadena original. 
                   tr
                     td.fst-italic.text-center RIGTH 
-                    td Retorna los caracteres de recuento más a la derecha
+                    td Retorna los caracteres de recuento más a la derecha.
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
             h4 Funciones matemáticas  
@@ -319,7 +319,7 @@
               tbody
                 tr
                   td.fst-italic.text-center INNER JOIN  
-                  td Retorna sólo aquellas filas donde haya un “match”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B 
+                  td Retorna sólo aquellas filas donde haya un “<i>match</i>”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B 
                 tr
                   td.fst-italic.text-center LEFT OUTER JOIN 
                   td Retorna todas las filas que sean similares, pero también aquellas de la Tabla A que no sean similares. 

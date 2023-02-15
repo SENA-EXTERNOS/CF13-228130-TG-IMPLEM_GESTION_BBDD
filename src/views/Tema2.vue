@@ -23,7 +23,7 @@
               tr
                 td.fst-italic  CREATE DATABASE 
 
-                td Crea una nueva base de datos  
+                td Crea una nueva base de datos.  
               tr
                 td.fst-italic  CREATE TABLE 
                 td Comando para crear una nueva tabla. 

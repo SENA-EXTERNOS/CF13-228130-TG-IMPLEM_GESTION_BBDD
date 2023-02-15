@@ -83,7 +83,7 @@
                 td Quita registro de una tabla. 
               tr
                 td.fst-italic SELECT 
-                td Para realizar consultas de los datos almacenados 
+                td Para realizar consultas de los datos almacenados. 
     p.mb-5(data-aos='fade-right') La lista de comandos referida anteriormente en la tabla 2. Sentencias DML, son los básicos del lenguaje DML, a continuación, vamos a construir como sería cada instrucción. 
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--gris2")
       .row(titulo="Inserción de datos en una tabla (INSERT) ").ps-5
@@ -364,7 +364,7 @@
                 tr
                   td.fst-italic.text-center
                     | UNION  
-                  td Permite unir dos sentencias en una única consulta
+                  td Permite unir dos sentencias en una única consulta.
                 tr
                   td.fst-italic.text-center
                     | INTERSECT
@@ -390,28 +390,28 @@
             tbody
               tr
                 td.fst-italic.text-center  MAX 
-                td Devuelve el valor máximo de la lista de registros a consultar
+                td Devuelve el valor máximo de la lista de registros a consultar.
               tr
                 td.fst-italic.text-center  MIN
-                td Devuelve el valor mínimo de la lista de registros a consultar
+                td Devuelve el valor mínimo de la lista de registros a consultar.
               tr
                 td.fst-italic.text-center  AVG 
-                td Devuelve el promedio del valor respectivo de una columna de la tabla
+                td Devuelve el promedio del valor respectivo de una columna de la tabla.
               tr
                 td.fst-italic.text-center  STDDEV
-                td Devuelve la desviación del estándar para un conjunto de números 
+                td Devuelve la desviación del estándar para un conjunto de números. 
               tr
                 td.fst-italic.text-center  COUNT 
-                td Retorna la cantidad del número de registro que tiene determina columna
+                td Retorna la cantidad del número de registro que tiene determina columna.
               tr
                 td.fst-italic.text-center  GROUP BY 
-                td Se indica una columna en específico para agrupar los resultados
+                td Se indica una columna en específico para agrupar los resultados.
               tr
                 td.fst-italic.text-center  HAVING
-                td Permite rechazar o seleccionar un conjunto de registros de una consulta 
+                td Permite rechazar o seleccionar un conjunto de registros de una consulta. 
               tr
                 td.fst-italic.text-center  ORDER BY
-                td Ordena el conjunto de registros resultantes de una consulta, se pueden ordenar de forma ascendente o descendente
+                td Ordena el conjunto de registros resultantes de una consulta, se pueden ordenar de forma ascendente o descendente.
     
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
@@ -449,6 +449,7 @@
       .col-lg-4(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 6 
+          br
           span #[em Consulta con la función MAX]
         img(src='@/assets/curso/temas/tema3/8.png', alt='')
         

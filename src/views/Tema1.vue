@@ -93,8 +93,8 @@
         img(src='@/assets/curso/temas/tema1/4.svg' alt='AvatarTop')
         .tarjeta.w-100(style="background-color: #e3f1fe ")
           .text-center.p-4
-            h4.text-center Lenguaje Xquery 
-            p Xquery es un lenguaje que permite la extracción y manipulación de los datos en formato XML, donde en la actualidad es una manera de compartir datos por internet. Con Xquery se puede generar reportes sobre los datos de una base de datos XML, además la realización de búsqueda de documentos de datos en la Web y la extracción de datos para implementarlos en línea. 
+            h4.text-center Lenguaje <i>Xquery</i> 
+            p <i>Xquery</i> es un lenguaje que permite la extracción y manipulación de los datos en formato XML, donde en la actualidad es una manera de compartir datos por internet. Con <i>Xquery</i> se puede generar reportes sobre los datos de una base de datos XML, además la realización de búsqueda de documentos de datos en la Web y la extracción de datos para implementarlos en línea. 
       .tarjeta-avatar.h-100
         img(src='@/assets/curso/temas/tema1/5.svg' alt='AvatarTop')
         .tarjeta.w-100(style="background-color: #e3f1fe ")
@@ -106,7 +106,7 @@
         .tarjeta.w-100(style="background-color: #e3f1fe ")
           .text-center.p-4
             h4.text-center Lenguaje SQL/XML 
-            p El lenguaje SQL/XML es una combinación de SQL y Xquery que también permite la manipulación y almacenamiento de datos XML en una base de datos que funciona con el lenguaje SQL. Facilita a las aplicaciones realizar sentencias SQL sobre datos en formato XML y de forma viceversa. Es crucial cuando se requiere extraer contenido de un documento XML o si se requiere garantizar la compatibilidad con optimizadores o sistemas que solo admiten formatos XML.
+            p El lenguaje SQL/XML es una combinación de SQL y <i>Xquery</i> que también permite la manipulación y almacenamiento de datos XML en una base de datos que funciona con el lenguaje SQL. Facilita a las aplicaciones realizar sentencias SQL sobre datos en formato XML y de forma viceversa. Es crucial cuando se requiere extraer contenido de un documento XML o si se requiere garantizar la compatibilidad con optimizadores o sistemas que solo admiten formatos XML.
       .tarjeta-avatar.h-100
         img(src='@/assets/curso/temas/tema1/5.svg' alt='AvatarTop')
         .tarjeta.w-100(style="background-color: #e3f1fe ")
@@ -213,16 +213,16 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            p.mb-0 Ningún componente de la clave primaria puede aceptar valores nulos 
+            p.mb-0 Ningún componente de la clave primaria puede aceptar valores nulos. 
           li
             i.fas.fa-check
-            p.mb-0 Las entidades a nivel general den ser distinguibles 
+            p.mb-0 Las entidades a nivel general den ser distinguibles. 
           li
             i.fas.fa-check
-            p.mb-0 Las claves primarias su función es la identificación única en el modelo relacional  
+            p.mb-0 Las claves primarias su función es la identificación única en el modelo relacional.  
           li
             i.fas.fa-check
-            p.mb-0 No puede haber entidades sin identidad, quiere decir con un valor desconocido
+            p.mb-0 No puede haber entidades sin identidad, quiere decir con un valor desconocido.
       div(titulo="Restricciones de dominio ").ps-5
         p Se refiere que cada atributo está asociado a un dominio de posibles valores. Especifica los límites del dominio. Son sencillas de comprobar por el sistema cuando se ingresan nuevos valores a la base de datos. 
           br

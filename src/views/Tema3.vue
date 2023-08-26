@@ -14,7 +14,7 @@
             template(v-slot:imagen)
               figure
                 img(src='@/assets/curso/temas/tema3/1.svg', alt='Texto que describa la imagen')
-            div(x="61.2%" y="9.6%" tooltip="Ver mas" numero="1")
+            div(x="61.2%" y="9.6%" tooltip="Ver más" numero="1")
               p #[em INSERT], Insertar información en una tabla de base de datos 
               p.ms-4 
                 span.cod1 INSERT INTO 
@@ -23,7 +23,7 @@
                 span.cod1 (´1962-03-17´, 
                 span.cod4 27875677,
                 span.cod2 ´Robles´, ´Carlos´ );
-            div(x="43.5%" y="33%" tooltip="Ver mas" numero="2")
+            div(x="43.5%" y="33%" tooltip="Ver más" numero="2")
               p #[em UPDATE], Actualizar (modificar) información en las tablas de bases de datos 
               p.ms-4 
                 span.cod1 UPDATE 
@@ -37,7 +37,7 @@
                 span.cod2 ´Id´ 
                 span.cod3 = 
                 span.cod4 284
-            div(x="43.5%" y="66.8%" tooltip="Ver mas" numero="3")
+            div(x="43.5%" y="66.8%" tooltip="Ver más" numero="3")
               p DELETE, Eliminar información de una base de datos
               p.ms-4 
                 span.cod1 DELETE FROM 
@@ -47,7 +47,7 @@
                 span.cod2 ´Apellido´ 
                 span.cod3 = 
                 span.cod2 ´Pereira´ ;
-            div(x="61.2%" y="90.6%" tooltip="Ver mas" numero="4")
+            div(x="61.2%" y="90.6%" tooltip="Ver más" numero="4")
               p SELECT, Selección de información de la base de datos
               p.ms-4 
                 span.cod1 SELECT  
@@ -133,7 +133,7 @@
           |“#[em DELETE FROM nombre_tabla WHERE nombre_columna = valor]” 
           br
           br
-          |- #[em WHERE], se utiliza para especificar cual registró vamos a eliminar, generalmente se identifica por la llave primaria, porque es un valor irrepetible solo lo tiene un registro. 
+          |- #[em WHERE], se utiliza para especificar cúal registro vamos a eliminar, generalmente se identifica por la llave primaria, porque es un valor irrepetible, solo lo tiene un registro. 
           br
           |- Si queremos borrar todos los registros o filas de una tabla, se utiliza la sentencia: “#[em DELETE * FROM] nombre_tabla;” 
           br
@@ -164,10 +164,10 @@
           ul.lista-ul--color
             li
               i.fas.fa-check
-              p.mb-0 Clausula #[em #[b SELECT]], ahí se indican o se nombran los campos de la tabla que queremos obtener, se nombran separados por coma dando respuesta a qué datos nos están solicitando.
+              p.mb-0 Cláusula #[em #[b SELECT]], ahí se indican o se nombran los campos de la tabla que queremos obtener, se nombran separados por coma dando respuesta a qué datos nos están solicitando.
             li
               i.fas.fa-check
-              p.mb-0 Clausula #[em #[b FROM]], indicamos en qué tablas se encuentran esos datos a consultar, se nombran las tablas que intervienen en la consulta separados por coma.
+              p.mb-0 Cláusula #[em #[b FROM]], indicamos en qué tablas se encuentran esos datos a consultar, se nombran las tablas que intervienen en la consulta separados por coma.
             li
               i.fas.fa-check
               p.mb-0 Cláusula #[em #[b WHERE]], aquí se establecen las condiciones que deben tener los registros de la tabla que intervienen en la consulta.
@@ -186,6 +186,7 @@
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo2.pdf')" target="_blank")
                     span Descargar
                     i.fas.fa-file-download
+    h3.mb-4(data-aos="fade-right") Operaciones
 
     .row.justify-content-center.mb-5(data-aos="zoom-in")
       .col-lg-11
@@ -312,7 +313,7 @@
             |#[em SELECT nombre, apellido, (salario + 100000 – 20000) as salario_total FROM empleados;] 
       .row(titulo="Operadores lógicos").ps-5.justify-content-center.g-5
         .col-lg-6.mb-lg-0.mb-3
-          p Los operadores lógicos permiten construir expresiones booleanas, el resultado de la implementación de este tipo de operadores en es un valor booleano (falso o verdadero). (Medina, R. 2020). 
+          p Los operadores lógicos permiten construir expresiones booleanas, el resultado de la implementación de este tipo de operadores es un valor booleano (falso o verdadero). (Medina, R. 2020). 
             br
             br
             |Lista de operadores lógicos empleados en consultas SQL
@@ -373,7 +374,7 @@
                   td.fst-italic.text-center
                     | EXCEPT 
                   td Tomando como referencia dos consultas, el #[em EXCEPT] retorna los registros de la primera consulta que no estén en la segunda consulta. 
-
+    h3.mb-4(data-aos="fade-right") Sentencias de agregación
     p.mb-5(data-aos='fade-right') Las sentencias de agregación son implementadas, por una parte, al realizar operaciones sobre un conjunto de datos, pero devolviendo un único valor agregado sobre todos los datos. Es decir, permite realizar promedio, conteo, máximos, mínimo, etc. En la tabla a continuación se especifica cada uno de ellos y su respectiva descripción:
     .row.justify-content-center.mb-5
       .col-lg-10 

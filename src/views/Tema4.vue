@@ -50,7 +50,7 @@
             | Las tablas utilizadas para almacenar los índices ocupan espacio.
           li
             i.fas.fa-check(style='color: #b9ddfc')
-            | Los índices consumen recursos ya que, cada vez que se realiza una operación de actualización, inserción o borrado en la tabla indexada se tienen que actualizar todas las tablas de índice definidas sobre ella.
+          | Los índices consumen recursos, ya que, cada vez que se realiza una operación de actualización, inserción o borrado en la tabla indexada se tienen que actualizar todas las tablas de índice definidas sobre ella.
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")

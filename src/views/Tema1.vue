@@ -63,7 +63,7 @@
                 i.fas.fa-check
                 | REVOCACIÓN: elimina el acceso de un usuario a la base de datos.
           div(titulo="Lenguaje de control de transacciones (TCL) ").ps-5
-            p El lenguaje de control de transacciones TCL, es el encargado de gestionar las transacciones en la base de datos. Generalmente las transacciones que se realizan en una base de datos, se agrupan en un conjunto de tareas relacionadas en una única tarea ejecutable. Todas las tareas deben ser exitosas para que la transacción fluya con normalidad. A continuación, una lista de sentencias TCL:
+            p El lenguaje de control de transacciones TCL, es el encargado de gestionar las transacciones en la base de datos. Generalmente, las transacciones que se realizan en una base de datos, se agrupan en un conjunto de tareas relacionadas en una única tarea ejecutable. Todas las tareas deben ser exitosas para que la transacción fluya con normalidad. A continuación, una lista de sentencias TCL:
             ul.lista-ul--color
               li
                 i.fas.fa-check
@@ -112,7 +112,7 @@
         .tarjeta.w-100(style="background-color: #e3f1fe ")
           .text-center.p-4
             h4.text-center Lenguaje GraphQL 
-            p GraphQL es un lenguaje de código abierto que opera con APIs, que son interfaces que permiten a los usuarios el acceso a los datos. Suministra una manera de definir la estructura de los datos y la forma en que el sistema retorna la información para evitar la liberación excesiva de datos. Es importante cuando se requiere extraer datos de varias Apis, agregar datos de distintas fuentes o la obtención eficiente de la especificación de los datos.  
+            p GraphQL es un lenguaje de código abierto que opera con APIs, que son interfaces que permiten a los usuarios el acceso a los datos. Suministra una manera de definir la estructura de los datos y la forma en que el sistema retorna la información para evitar la liberación excesiva de datos. Es importante cuando se requiere extraer datos de varias APIs, agregar datos de distintas fuentes o la obtención eficiente de la especificación de los datos.  
       .tarjeta-avatar.h-100
         img(src='@/assets/curso/temas/tema1/4.svg' alt='AvatarTop')
         .tarjeta.w-100(style="background-color: #e3f1fe ")
@@ -149,7 +149,7 @@
               p.mb-0 Manejan gran variedad de datos operativos, provenientes de sistemas OLTP #[em (on-line transactional processing)]. Su objetivo crucial es ejecutar y controlar tareas primordiales de la organización, ya que dispone o permite obtener una visión de los procesos de negocio en ejecución. 
             li
               i.fas.fa-check
-              | Actualmente las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores.
+              | Actualmente, las bases de datos transaccionales capturan datos sobre el contexto histórico de la transacción, con el objetivo de aprovechar su aplicabilidad en análisis posteriores.
             li
               i.fas.fa-check
               | Están optimizadas para realizar actualizaciones rápidas y cortas para los usuarios finales.
@@ -178,10 +178,10 @@
     .row.justify-content-center.mb-5
       .col-lg-4.col-6.mb-lg-0.mb-3(data-aos="fade-left"): img(src='@/assets/curso/temas/tema1/7.svg', alt='')
       .col-lg-8(data-aos="fade-left")
-        p En caso de que la operación de restar de la cuenta origen se efectúe correctamente, pero la otra operación no se logra finalizar, al final del día el balance del banco será incorrecto. Por lo tanto, debe haber una manera de garantizar que se realicen correctamente las dos operaciones o incorrectamente, para evitar inconsistencias en el balance del banco. Un gestor de bases de datos transacciones provee esa característica.
+        p En caso de que la operación de restar de la cuenta origen se efectúe correctamente, pero la otra operación no se logra finalizar, al final del día el balance del banco será incorrecto. Por lo tanto, debe haber una manera de garantizar que se realicen correctamente las dos operaciones o incorrectamente, para evitar inconsistencias en el balance del banco. Un gestor de bases de datos de transacciones provee esa característica.
           br
           br
-          | Un gestor de bases de datos transacciones permite agrupar varias operaciones en una sola transacción indivisible. El gestor es el encargado de garantizar que las operaciones finalicen sin errores o en caso contrario no finalice ninguna. En caso de que una operación finalice correctamente y la otra no, como el ejemplo referido anteriormente, el gestor inicia el proceso de #[em #[b rollback] ]  de todas las operaciones implicadas, incluso aquellas operaciones que se realizaron correctamente, eliminando cualquier rastro de la transacción y volviendo a un estado actual la base de datos tal cual como estaba antes de empezar a ejecutar dicha transacción. Si todas las operaciones agrupadas en la transacción se ejecutan correctamente, la transacción realiza #[em commit ] y se ejecutan los cambios en la base de datos. Una vez se concluyó el #[em #[b commit]] de la respectiva transacción, no se puede realizar ninguna clase de #[em #[b rollback]] de los cambios. 
+          | Un gestor de bases de datos de transacciones permite agrupar varias operaciones en una sola transacción indivisible. El gestor es el encargado de garantizar que las operaciones finalicen sin errores o en caso contrario no finalice ninguna. En caso de que una operación finalice correctamente y la otra no, como el ejemplo referido anteriormente, el gestor inicia el proceso de #[em #[b rollback] ]  de todas las operaciones implicadas, incluso aquellas operaciones que se realizaron correctamente, eliminando cualquier rastro de la transacción y volviendo a un estado actual la base de datos tal cual como estaba antes de empezar a ejecutar dicha transacción. Si todas las operaciones agrupadas en la transacción se ejecutan correctamente, la transacción realiza #[em commit ] y se ejecutan los cambios en la base de datos. Una vez se concluyó el #[em #[b commit]] de la respectiva transacción, no se puede realizar ninguna clase de #[em #[b rollback]] de los cambios. 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon.color-acento-botones.p-4.mb-4(style="background-color: #e5fcff")
@@ -219,10 +219,10 @@
             p.mb-0 Las entidades a nivel general den ser distinguibles. 
           li
             i.fas.fa-check
-            p.mb-0 Las claves primarias su función es la identificación única en el modelo relacional.  
+            p.mb-0 Las claves primarias, su función es la identificación única en el modelo relacional.  
           li
             i.fas.fa-check
-            p.mb-0 No puede haber entidades sin identidad, quiere decir con un valor desconocido.
+            p.mb-0 No puede haber entidades sin identidad, quiere decir, con un valor desconocido.
       div(titulo="Restricciones de dominio ").ps-5
         p Se refiere que cada atributo está asociado a un dominio de posibles valores. Especifica los límites del dominio. Son sencillas de comprobar por el sistema cuando se ingresan nuevos valores a la base de datos. 
           br
@@ -259,7 +259,7 @@
             | Estas reglas se enfocan en las claves primarias y claves foráneas.  
       div(titulo="Restricciones referenciales").ps-5
         p Las bases de datos correspondientes no deben contener valores nulos de una clave ajena, donde, a su vez no, existiría una clave primaria en la relación.   
-
+          br
           br
           |#[b Clave ajena o clave foránea]
           br
@@ -412,7 +412,7 @@
       .numero(style="background-color: #084a93; width: 24px; height: 24px").p-1.text-white.d-flex.justify-content-center.align-items-center.me-3 
         p.fw-bold.mb-0.text-center 2
       .contenido 
-        p Clausulas, son palabras dentro del lenguaje SQL que nos permite complementar una sentencia o una consulta. Como poder ser: #[em WHERE, ORDER BY, GROUP BY…etc]
+        p Cláusulas, son palabras dentro del lenguaje SQL que nos permite complementar una sentencia o una consulta. Cómo poder ser: #[em WHERE, ORDER BY, GROUP BY…etc]
     .d-flex.mb-3
       .numero(style="background-color: #084a93; width: 24px; height: 24px").p-1.text-white.d-flex.justify-content-center.align-items-center.me-3 
         p.fw-bold.mb-0.text-center 3
@@ -438,11 +438,11 @@
             template(v-slot:imagen)
               figure
                 img(src='@/assets/curso/temas/tema1/15.svg', alt='Texto que describa la imagen')
-            div(x="90.2%" y="23.6%" tooltip="Ver mas" numero="1")
+            div(x="90.2%" y="23.6%" tooltip="Ver más" numero="1")
               p Lenguaje de definición de datos, que permite a los usuarios llevar a cabo las tareas de definición de las estructuras que almacenarán los datos. 
-            div(x="90.2%" y="52%" tooltip="Ver mas" numero="2")
+            div(x="90.2%" y="52%" tooltip="Ver más" numero="2")
               p Lenguaje de manipulación de datos, es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos. 
-            div(x="90.2%" y="79.3%" tooltip="Ver mas" numero="3")
+            div(x="90.2%" y="79.3%" tooltip="Ver más" numero="3")
               p Lenguaje de gestión de datos, contiene instrucciones mediante las cuales se realiza la asignación de derechos de acceso a la base de datos.
 </template>
 

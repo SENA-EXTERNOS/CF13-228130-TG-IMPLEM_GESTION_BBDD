@@ -2,7 +2,7 @@ export default {
   global: {
     componenteFormativo: 'Gestión de BD SQL',
     descripcionCurso:
-      'Este componente formativo, aborda cada uno de los tipos de lenguajes manejados en las bases de datos SQL, como es el caso del lenguaje de manipulación y el lenguaje para la creación de la misma base de datos. Además, se fundamentan las diferentes consultas y operaciones para su uso. ',
+      'Este componente formativo aborda cada uno de los tipos de lenguajes manejados en las bases de datos SQL, como es el caso del lenguaje de manipulación y el lenguaje para la creación de la misma base de datos. Además, se fundamentan las diferentes consultas y operaciones para su uso. ',
     imagenBannerPrincipal: require('@/assets/curso/portada/banner-princiapal.svg'),
     fondoBannerPrincipal: require('@/assets/curso/portada/fondo-banner-principal.svg'),
     imagenesDecorativasBanner: [
@@ -109,8 +109,7 @@ export default {
       referencia:
         'Lozano, J. (2018). <i>Creación y gestión de una base de datos con MySQL y phpMyAdmin.</i>',
       tipo: 'Artículo',
-      link:
-        'https://tauja.ujaen.es/bitstream/10953.1/9445/1/TFG%20%285%29.pdf ',
+      link: 'https://crea.ujaen.es/handle/10953.1/9445',
     },
     {
       tema: 'SQL Lenguaje de consulta relacional',
@@ -189,7 +188,7 @@ export default {
     {
       referencia:
         'Aragón, Y., González, C., Hernández, O., & Hernández, E. (2018). Herramienta para el aprendizaje de bases de datos relacionales. <i>Revista Cubana de Ciencias Informáticas</i>.',
-      link: 'https://www.redalyc.org/journal/3783/378365832012/html/',
+      link: '',
     },
     {
       referencia:

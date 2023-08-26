@@ -57,7 +57,7 @@
           h5 Figura 4
           br
           span #[i Sistema gestor de bases de datos MySQL]
-        img(src='@/assets/curso/temas/tema2/2.svg', alt='')
+        img(src='@/assets/curso/temas/tema3/c1.svg', alt='')
     p.mb-5(data-aos='fade-right') En el siguiente video se puede observar el proceso de construcción de una base de datos en un gestor de bases de datos MySQL: 
     figure.mb-5
       .video
@@ -72,7 +72,7 @@
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0.text-white
                   h3.mb-1 Construcción de una base de datos MySQL
-                  p.text-small Para visualizar el procedimiento de la creación de estructura de una base de datos consulte el documento anexo.t 
+                  p.text-small Para visualizar el procedimiento de la creación de estructura de una base de datos, consulte el documento anexo.
                 .col-sm-auto
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo1.pdf')" target="_blank")
                     span Descargar

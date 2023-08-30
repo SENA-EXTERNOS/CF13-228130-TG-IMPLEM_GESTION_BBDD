@@ -24,6 +24,27 @@
                 span.cod4 27875677,
                 span.cod2 ´Robles´, ´Carlos´ );
             div(x="43.5%" y="33%" tooltip="Ver más" numero="2")
+              p #[em DELETE], Eliminar información de una base de datos
+              p.ms-4 
+                span.cod1 DELETE FROM 
+                span.cod2 ´Empleados´
+                br
+                span.cod1 WHERE 
+                span.cod2 ´Apellido´ 
+                span.cod3 = 
+                span.cod2 ´Pereira´ ;
+            div(x="43.5%" y="66.8%" tooltip="Ver más" numero="3")
+              p #[em SELECT], Selección de información de la base de datos
+              p.ms-4 
+                span.cod1 SELECT  
+                span.cod3 Nombre, Precio 
+                span.cod1 FROM 
+                span.cod2 ´Productos´
+                span.cod1 WHERE 
+                span.cod2 ´Id´ 
+                span.cod4 = 
+                span.cod3 284; 
+            div(x="61.2%" y="90.6%" tooltip="Ver más" numero="4")
               p #[em UPDATE], Actualizar (modificar) información en las tablas de bases de datos 
               p.ms-4 
                 span.cod1 UPDATE 
@@ -37,27 +58,6 @@
                 span.cod2 ´Id´ 
                 span.cod3 = 
                 span.cod4 284
-            div(x="43.5%" y="66.8%" tooltip="Ver más" numero="3")
-              p DELETE, Eliminar información de una base de datos
-              p.ms-4 
-                span.cod1 DELETE FROM 
-                span.cod2 ´Empleados´
-                br
-                span.cod1 WHERE 
-                span.cod2 ´Apellido´ 
-                span.cod3 = 
-                span.cod2 ´Pereira´ ;
-            div(x="61.2%" y="90.6%" tooltip="Ver más" numero="4")
-              p SELECT, Selección de información de la base de datos
-              p.ms-4 
-                span.cod1 SELECT  
-                span.cod3 Nombre, Precio 
-                span.cod1 FROM 
-                span.cod2 ´Productos´
-                span.cod1 WHERE 
-                span.cod2 ´Id´ 
-                span.cod4 = 
-                span.cod3 284; 
     p.mb-5(data-aos='fade-right') Lenguaje de manipulación de datos (Data Manipulation Language, o DML) es un lenguaje proporcionado por el sistema de gestión de base de datos que permite a los usuarios llevar a cabo las tareas de consulta o manipulación de los datos, organizados por el modelo de datos adecuados.
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="zoom-in")

@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 4
-      h1 Subconsultas anidadas, vistas y otras características de SQL 
+      h1 Subconsultas anidadas, vistas y otras características de SQL
     p.mb-5(data-aos='fade-right') En SQL, además de lo visto, se pueden realizar subconsultas anidadas, vistas y otras como:
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
@@ -20,10 +20,10 @@
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | Índice Simple, está definido sobre una sola columna de la tabla. 
+            | Índice Simple, está definido sobre una sola columna de la tabla.
           li
             i.fas.fa-check
-            | Índice compuesto, está definido por varias columnas de la misma tabla. 
+            | Índice compuesto, está definido por varias columnas de la misma tabla.
     .tarjeta--container.row.mb-5
       .col-md.tarjeta.color-secundario.p-5
         .row.justify-content-center.mb-4
@@ -60,14 +60,14 @@
             |#[em “CREATE INDEX] "NOMBRE_ÍNDICE" #[em ON] "NOMBRE_TABLA"(NOMBRE_COLUMNA);”
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
-      h3.mb-0 Vistas en SQL 
+      h3.mb-0 Vistas en SQL
     .row.justify-content-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/4.svg', alt='')
       .col-lg-11(data-aos="fade-left")
-        p Las vistas en SQL es una estructura que permite obtener un resultado de una consulta y almacenarla, el resultado de ejecutar una vista se podría decir que es como tener una tabla virtual compuesta por filas (registros) y columnas (campos); además se puede ejecutar nuevas consultas sobre esa vista como si fuera una tabla normal de la base de datos. 
+        p Las vistas en SQL es una estructura que permite obtener un resultado de una consulta y almacenarla, el resultado de ejecutar una vista se podría decir que es como tener una tabla virtual compuesta por filas (registros) y columnas (campos); además se puede ejecutar nuevas consultas sobre esa vista como si fuera una tabla normal de la base de datos.
           br
           br
-          |Las vistas se emplean cuando se necesitan ejecutar varias consultas y obtener una sola tabla como resultado. 
+          |Las vistas se emplean cuando se necesitan ejecutar varias consultas y obtener una sola tabla como resultado.
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .cajon.color-acento-botones.p-4.mb-4(style="background-color: #d9faff ")
@@ -78,23 +78,23 @@
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color: #fff4da ")
-          .h5 Ejemplo: 
-          p.mb-0 #[em CREATE VIEW] vista1 #[em AS SELECT] nombreProducto, cantidadProducto, fechaVenta, total #[em FROM] producto, venta #[em WHERE] producto.codigoProducto=venta.codigoProducto #[em AND] nombreProducto=’huevos’;	
+          .h5 Ejemplo:
+          p.mb-0 #[em CREATE VIEW] vista1 #[em AS SELECT] nombreProducto, cantidadProducto, fechaVenta, total #[em FROM] producto, venta #[em WHERE] producto.codigoProducto=venta.codigoProducto #[em AND] nombreProducto=’huevos’;
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
       h3.mb-0 Subconsultas
-    p.mb-5(data-aos='fade-right') Una subconsulta en el lenguaje SQL, consiste en aprovechar los resultados de una consulta dentro de otra consulta. 
+    p.mb-5(data-aos='fade-right') Una subconsulta en el lenguaje SQL, consiste en aprovechar los resultados de una consulta dentro de otra consulta.
     .row.justify-content-center.mb-5
       .col-lg-4.col-6(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/5.svg', alt='')
       .col-lg-8(data-aos="fade-left")
-        p #[b Sintaxis de una subconsulta:] 
+        p #[b Sintaxis de una subconsulta:]
           br
           br
           |#[em SELECT] campo_1, campo_2, campo_3 #[em FROM] nombre_tablas  #[em HAVING] cláusula | #[em WHERE] cláusula (#[em SELECT] lista_campos #[em FROM] nombre_tablas);
         ul.lista-ul--color
           li
             i.fas.fa-check
-            | La subconsulta se realiza una vez y antes de la consulta principal. 
+            | La subconsulta se realiza una vez y antes de la consulta principal.
           li
             i.fas.fa-check
             | El resultado de la subconsulta es empleado por la consulta principal.
@@ -108,7 +108,7 @@
             | La subconsulta no debe llevar una cláusula ORDER BY.
           li
             i.fas.fa-check
-            | Para subconsultas que retornan una fila (monoregistro), emplear operadores a nivel de fila. 
+            | Para subconsultas que retornan una fila (monoregistro), emplear operadores a nivel de fila.
           li
             i.fas.fa-check
             | Para subconsultas que retornan más de una fila (multiregistro), emplear operadores que actúen sobre varios registros.
@@ -119,12 +119,12 @@
             | Este tipo de consulta devuelve un único registro como resultado.
           li
             i.fas.fa-check
-            p.mb-0 Se implementan operadores de comparación  #[b  (<, >, =, <=, >=, < >)]. 
+            p.mb-0 Se implementan operadores de comparación  #[b  (<, >, =, <=, >=, < >)].
     .cajon-adorno.color-acento-contenido.p-4.mb-5(style="background-color: #fff4da")
-        p #[b Ejemplo:] 
+        p #[b Ejemplo:]
           br
           br
-          |#[em SELECT] nombre, cargo #[em FROM] empleado #[em WHERE] cargo = (#[em SELECT] cargo FROM empleado WHERE codigoCargo = 7456 AND salario < 800000); 
+          |#[em SELECT] nombre, cargo #[em FROM] empleado #[em WHERE] cargo = (#[em SELECT] cargo FROM empleado WHERE codigoCargo = 7456 AND salario < 800000);
     .row.justify-content-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/6.svg', alt='')
       .col-lg-11(data-aos="fade-left")
@@ -144,9 +144,9 @@
             p.mb-0 #[b ALL] = verdadero si su resultado cumple mostrando todos los registros en la subconsulta.
           li
             i.fas.fa-check
-            p.mb-0 El operador #[b #[em NOT]] puede ser empleado al mismo tiempo con los operadores #[em #[b ALL, ANY]] e #[em #[b IN]]. 
+            p.mb-0 El operador #[b #[em NOT]] puede ser empleado al mismo tiempo con los operadores #[em #[b ALL, ANY]] e #[em #[b IN]].
     .cajon-adorno.color-acento-contenido.p-4.mb-5(style="background-color: #fff4da")
-      p Ejemplo: 
+      p Ejemplo:
         br
         br
         |#[em SELECT] nombre, salario, codigoArea #[em FROM] empleado #[em WHERE] salario #[em IN] (#[em SELECT MIN](salario) #[em FROM] empleado #[em GROUP BY] codigoArea)
@@ -156,8 +156,8 @@
         |#[em SELECT] codigoArea, nombre, cargo #[em FROM] empleado #[em WHERE] salario > #[em ALL] (#[em SELECT] avg(salario) #[em FROM] empleado #[em GROUP] BY codigoCargo)
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
-      h3.mb-0 Funciones DML 
-    p.mb-5(data-aos='fade-right') En la actualidad en el lenguaje SQL existen una gran variedad de consultas realizadas para la manipulación de los datos de una base de datos, a continuación, se expone otra serie de funciones utilizadas en el lenguaje SQL: 
+      h3.mb-0 Funciones DML
+    p.mb-5(data-aos='fade-right') En la actualidad en el lenguaje SQL existen una gran variedad de consultas realizadas para la manipulación de los datos de una base de datos, a continuación, se expone otra serie de funciones utilizadas en el lenguaje SQL:
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.bg-gradient.p-3.mb-5
@@ -167,7 +167,7 @@
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0.text-white
-                  h3.mb-1 Funciones DML 
+                  h3.mb-1 Funciones DML
                   p.text-small Para ver ejemplos de estas funciones puede consultar el documento anexo.
                 .col-sm-auto
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo3.pdf')" target="_blank")
@@ -177,7 +177,7 @@
       SlyderA(tipo='b')
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
-            h4 Funciones de cadena 
+            h4 Funciones de cadena
             p Este tipo de funciones retornan un carácter o varios caracteres.
           .col-lg-6
             .color-acento-contenido.mb-5
@@ -189,7 +189,7 @@
                 tbody
                   tr
                     td.fst-italic.text-center LOWER
-                    td Convierte la cadena en letras minúsculas. 
+                    td Convierte la cadena en letras minúsculas.
                   tr
                     td.fst-italic.text-center UPPER
                     td Convierte la cadena en letras mayúsculas.
@@ -197,18 +197,18 @@
                     td.fst-italic.text-center REPLACE
                     td Retorna la cadena nueva por la cadena que se requiere reemplazar.
                   tr
-                    td.fst-italic.text-center STR 
+                    td.fst-italic.text-center STR
                     td Convierte número en una cadena de caracteres de la longitud especificada en longitud.
                   tr
                     td.fst-italic.text-center SUBSTRING
-                    td Retorna la subcadena a buscar, dependiendo de los parámetros para el recorte de la cadena original. 
+                    td Retorna la subcadena a buscar, dependiendo de los parámetros para el recorte de la cadena original.
                   tr
-                    td.fst-italic.text-center RIGTH 
+                    td.fst-italic.text-center RIGTH
                     td Retorna los caracteres de recuento más a la derecha.
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
-            h4 Funciones matemáticas  
-            p Son aquellos comandos empleados en consultas SQL para trabajar con tipo de dato numérico. 
+            h4 Funciones matemáticas
+            p Son aquellos comandos empleados en consultas SQL para trabajar con tipo de dato numérico.
           .col-lg-6
             .color-acento-contenido.mb-5
               table.bg-white
@@ -218,11 +218,11 @@
                     th Descripción
                 tbody
                   tr
-                    td.fst-italic.text-center AVG 
-                    td Se calcula un promedio de la columna de un registro. 
+                    td.fst-italic.text-center AVG
+                    td Se calcula un promedio de la columna de un registro.
                   tr
-                    td.fst-italic.text-center CEILING 
-                    td Obtiene el “techo” de un número, es decir, el valor entero superior más cercano al parámetro de entrada. 
+                    td.fst-italic.text-center CEILING
+                    td Obtiene el “techo” de un número, es decir, el valor entero superior más cercano al parámetro de entrada.
                   tr
                     td.fst-italic.text-center FLOOR
                     td Obtiene el “piso” de un número, es decir, el valor entero inferior más cercano al parámetro de entrada.
@@ -234,11 +234,11 @@
                     td Elimina los decimales de un número, retornando solo el número entero.
                   tr
                     td.fst-italic.text-center SIGN
-                    td Retorna el signo (positivo o negativo) de un número. 
+                    td Retorna el signo (positivo o negativo) de un número.
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
-            h4 Funciones fecha-hora  
-            p Funciones encargadas de la manipulación de fechas, y la extracción del día, mes, o año de una fecha correspondiente. 
+            h4 Funciones fecha-hora
+            p Funciones encargadas de la manipulación de fechas, y la extracción del día, mes, o año de una fecha correspondiente.
           .col-lg-6
             .color-acento-contenido.mb-5
               table.bg-white
@@ -248,13 +248,13 @@
                     th Descripción
                 tbody
                   tr
-                    td.fst-italic.text-center  DAY 
-                    td Función para obtener el día según fecha indicada. 
+                    td.fst-italic.text-center  DAY
+                    td Función para obtener el día según fecha indicada.
                   tr
                     td.fst-italic.text-center GETDATE
-                    td Función para obtener la fecha del sistema. 
+                    td Función para obtener la fecha del sistema.
                   tr
-                    td.fst-italic.text-center MONTH 
+                    td.fst-italic.text-center MONTH
                     td Función para obtener el mes según fecha indicada.
                   tr
                     td.fst-italic.text-center YEAR
@@ -262,7 +262,7 @@
         .row.justify-content-center
           .col-lg-6.mb-4.mb-lg-0
             h4 Funciones del sistema
-            p Son funciones más operativas cuyo desempeño radica en conversiones especiales del tipo de dato del valor de un registro para operaciones posteriores. 
+            p Son funciones más operativas cuyo desempeño radica en conversiones especiales del tipo de dato del valor de un registro para operaciones posteriores.
           .col-lg-6
               .color-acento-contenido.mb-5
               table.bg-white
@@ -272,43 +272,45 @@
                     th Descripción
                 tbody
                   tr
-                    td.fst-italic.text-center CAST 
-                    td Permite convertir temporalmente el valor de un campo de un tipo de datos a otro para que puedas realizar algunos cálculos. 
+                    td.fst-italic.text-center CAST
+                    td Permite convertir temporalmente el valor de un campo de un tipo de datos a otro para que puedas realizar algunos cálculos.
                   tr
-                    td.fst-italic.text-center CONVERT 
+                    td.fst-italic.text-center CONVERT
                     td Permiten cambiar el tipo de una columna durante la sentencia SQ.
                   tr
                     td.fst-italic.text-center ISNULL
                     td Retorna el reemplazo si la expresión se evalúa como #[em NULL].
     .titulo-square.d-flex.align-items-center.mb-4(data-aos="fade-right")
       i.fas.fa-square(style="color: #FFB30B ").me-3.mb-0
-      h3.mb-0 Consultas combinadas DML 
+      h3.mb-0 Consultas combinadas DML
     .row.justify-content-center.mb-5
       .col-lg-1.col-6.mb-lg-0.mb-3(data-aos="fade-right"): img(src='@/assets/curso/temas/tema4/7.svg', alt='')
       .col-lg-11(data-aos="fade-left")
-        p Consulta SQL en más de una tabla – consultas anidadas, son consultas donde interfieren dos o más tablas para realizar la consulta SQL, son de mayor aporte a la hora de obtener resultados. 
+        p Consulta SQL en más de una tabla – consultas anidadas, son consultas donde interfieren dos o más tablas para realizar la consulta SQL, son de mayor aporte a la hora de obtener resultados.
           br
           br
-          |#[b La sintaxis de esta sentencia SQL es la siguiente:] 
+          |#[b La sintaxis de esta sentencia SQL es la siguiente:]
           br
           br
-          |#[em SELECT] nombre_columna, nombre_columna, nombre:columna #[em FROM] nombre_tabla,nombre_tabla  #[em where] nombre_tabla.llave_primaria=nombre_tabla.llave foránea; 
+          |#[em SELECT] nombre_columna, nombre_columna, nombre:columna #[em FROM] nombre_tabla,nombre_tabla  #[em where] nombre_tabla.llave_primaria=nombre_tabla.llave foránea;
     .row.justify-content-center.mb-5
-      .col-lg-10 
+      .col-lg-10
         .cajon-adorno.color-acento-contenido.p-4.mb-5(style="background-color: #fff4da")
-          p #[b Ejemplo:] 
+          p #[b Ejemplo:]
             br
             br
-            |Realizaremos una consulta para obtener todos los nombres de las imágenes de los sitios turísticos, la sentencia sería la siguiente: 
+            |Realizaremos una consulta para obtener todos los nombres de las imágenes de los sitios turísticos, la sentencia sería la siguiente:
             br
             br
             |#[em SELECT nom_tur,nom_img FROM] turismo, imagen #[em where] turismo.id_tur=imagen.id_tur_img;
-    p.mb-5(data-aos='fade-right') Para realizar consultas donde intervienen más de una tabla de la base de datos se deben implementar una gran variedad de comandos. A continuación, en la tabla siguiente, se destacan algunos de ellos. 
+
+    p.mb-5(data-aos='fade-right') Para realizar consultas donde interviene más de una tabla de la base de datos se debe implementar una gran variedad de comandos. En la tabla siguiente, se destacan algunos de ellos.
+
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="zoom-in")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Tabla 4
-          br 
+          br
           span #[i Operadores JOINS]
         .color-acento-contenido.mb-5
             table.bg-white
@@ -318,21 +320,21 @@
                   th Descripción
               tbody
                 tr
-                  td.fst-italic.text-center INNER JOIN  
-                  td Retorna sólo aquellas filas donde haya un “<i>match</i>”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B. 
+                  td.fst-italic.text-center INNER JOIN
+                  td Retorna sólo aquellas filas donde haya un “<i>match</i>”, es decir, retorna las filas donde el valor de la columna de la tabla A que se implementa para hacer el JOIN coincida con el valor de la columna correspondiente en la tabla B.
                 tr
-                  td.fst-italic.text-center LEFT OUTER JOIN 
-                  td Retorna todas las filas que sean similares, pero también aquellas de la Tabla A que no sean similares. 
+                  td.fst-italic.text-center LEFT OUTER JOIN
+                  td Retorna todas las filas que sean similares, pero también aquellas de la Tabla A que no sean similares.
 
                 tr
-                  td.fst-italic.text-center RIGTH OUTER JOIN 
+                  td.fst-italic.text-center RIGTH OUTER JOIN
                   td Exactamente lo mismo, pero a la inversa, cuando se requiere listar las filas de la tabla B, aunque no estén relacionadas con ninguna fila de la tabla A.
                 tr
                   td.fst-italic.text-center  FULL OUTER JOIN
-                  td Es como la suma de los dos anteriores comandos. Queremos tanto las filas de la A como las de B, tanto si hay match como si no. 
+                  td Es como la suma de los dos anteriores comandos. Queremos tanto las filas de la A como las de B, tanto si hay match como si no.
                 tr
-                  td.fst-italic.text-center CROSS JOIN  
-                  td Se utiliza para generar una combinación emparejada de cada fila de la primera tabla con cada fila de la segunda tabla. 
+                  td.fst-italic.text-center CROSS JOIN
+                  td Se utiliza para generar una combinación emparejada de cada fila de la primera tabla con cada fila de la segunda tabla.
     .row.justify-content-center.mb-5
       .col-lg-10
         .tarjeta.bg-gradient.p-3.mb-5
@@ -342,8 +344,8 @@
             .col
               .row.justify-content-between.align-items-center
                 .col.mb-3.mb-sm-0.text-white
-                  h3.mb-1 Consultas combinadas DML 
-                  p.text-small Para conocer más sobre las consultas combinadas DML puede consultar documento anexo.  
+                  h3.mb-1 Consultas combinadas DML
+                  p.text-small Para conocer más sobre las consultas combinadas DML puede consultar documento anexo.
                 .col-sm-auto
                   a.boton.color-acento-botones.text-sistem(:href="obtenerLink('downloads/anexo4.pdf')" target="_blank")
                     span Descargar
@@ -353,7 +355,7 @@
         .cajon.color-acento-contenido.p-4.mb-4(style="background-color:  #fff4da")
           p.mb-0 Recuerde explorar los demás recursos que se encuentran disponibles en este componente formativo; para ello, diríjase al menú principal, donde encontrará la síntesis, una actividad didáctica para reforzar los conceptos estudiados, material complementario, entre otros.
 
-            
+
 </template>
 
 <script>

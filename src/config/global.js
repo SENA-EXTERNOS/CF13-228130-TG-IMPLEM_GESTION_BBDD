@@ -217,8 +217,6 @@ export default {
     {
       referencia:
         'Martínez, D. (2019). Manual de bases de datos (<i>Autoaprendizaje</i>).',
-      link:
-        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1j5choe/sena_elibroELB175897',
     },
   ],
   creditos: {

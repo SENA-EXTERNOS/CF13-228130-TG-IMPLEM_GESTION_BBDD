@@ -114,10 +114,8 @@ export default {
     {
       tema: 'SQL Lenguaje de consulta relacional',
       referencia:
-        'Bisson, A. (2021). <i>SQL: Fundamentos del lenguaje (con ejercicios corregidos)</i>',
+        'Bisson, A. (3ª ed). (2021). SQL:<em> Fundamentos del lenguaje (con ejercicios corregidos).</em> Editorial Recursos Informáticos.',
       tipo: 'Libro',
-      link:
-        'https://www-eni-training-com.bdigital.sena.edu.co/portal/client/mediabook/home',
     },
     {
       tema: 'SQL Lenguaje de consulta relacional',
@@ -130,9 +128,10 @@ export default {
     {
       tema: 'Sentencias DDL',
       referencia:
-        'El - masri,H. (2013). <i>Data Definition Language</i> (DDL).',
+        'Elmasri, R. (2018). Data Definition Language (DDL). (eds) Encyclopedia of Database Systems. Springer, New York, NY.',
       tipo: 'Artículo',
-      link: 'http://site.iugaza.edu.ps/hmasry/files/Lab2-DDL.pdf',
+      link:
+        'https://link.springer.com/referenceworkentry/10.1007/978-1-4614-8265-9_80653',
     },
   ],
   glosario: [
@@ -213,10 +212,6 @@ export default {
         'Figueredo, L., Rodríguez, E. & Silva, Y. (2021).<i> Softar, software educativo de álgebra relacional de bases de datos</i>. ',
       link:
         'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/1i756fj/TN_cdi_dialnet_primary_oai_dialnet_unirioja_es_ART0001500395 ',
-    },
-    {
-      referencia:
-        'Martínez, D. (2019). Manual de bases de datos (<i>Autoaprendizaje</i>).',
     },
   ],
   creditos: {
